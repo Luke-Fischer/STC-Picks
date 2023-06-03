@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using STC_Picks.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<STCDbContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("UsersConnection")
+));
 
 var app = builder.Build();
 

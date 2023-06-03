@@ -1,25 +1,100 @@
 ﻿@model User
 
 <form>
-    <div style="position:relative; width:50%; left:25%; top:90px;">
-        <h1 style="text-align:center;">Employee Login</h1>
+    <div style="position:relative; width:75%; left:13.5%;">
+        <h1 style="text-align:center;">Enter Your Picks</h1>
         <br />
         <!-- first name input -->
-        <div class="form-outline;">
-            <label asp-for="firstName"></label>
-            <input asp-for="firstName" class="form-control" />
-        </div>
-        <br />
-        <!-- last name input -->
-        <div class="form-outline mb-4">
-            <label asp-for="lastName"></label>
-            <input asp-for="lastName" class="form-control" />
-        </div>
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-        <!-- Register buttons -->
-        <div class="text-center">
-            <p>Not a member?  <a class="text-blue" asp-area="" asp-controller="EmployeeSignIn" asp-action="Register">Register</a></p>
+        <div style="display:grid; grid-template-columns: 1fr 1fr;">
+            <section style="width:95%; margin:5px;">
+                <label asp-for="firstName"></label>
+                <input asp-for="firstName" class="form-control" />
+            </section>
+            <!-- last name input -->
+            <section style="width:95%; margin:5px;">
+                <label asp-for="lastName"></label>
+                <input asp-for="lastName" class="form-control" />
+            </section>
+            <section style="width:95%; margin:25px 15px 15px 4px;">
+                <h2>Men's Draw</h2>
+            </section>
+            <section>
+            </section>
+
+            <!-- Men's' input -->
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male1"></label>
+                <input asp-for="male1" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male2"></label>
+                <input asp-for="male2" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male3"></label>
+                <input asp-for="male3" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male4"></label>
+                <input asp-for="male4" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male5"></label>
+                <input asp-for="male5" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male6"></label>
+                <input asp-for="male6" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male7"></label>
+                <input asp-for="male7" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="male8"></label>
+                <input asp-for="male8" class="form-control" />
+            </section>
+            <section style="width:95%; margin:25px 15px 15px 4px;">
+                <h2>Women's Draw</h2>
+            </section>
+            <section>
+            </section>
+            <!-- Womens input -->
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female1"></label>
+                <input asp-for="female1" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female2"></label>
+                <input asp-for="female2" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female3"></label>
+                <input asp-for="female3" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female4"></label>
+                <input asp-for="female4" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female5"></label>
+                <input asp-for="female5" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female6"></label>
+                <input asp-for="female6" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female7"></label>
+                <input asp-for="female7" class="form-control" />
+            </section>
+            <section style="width:95%; margin:5px;">
+                <label asp-for="female8"></label>
+                <input asp-for="female8" class="form-control" />
+            </section>
+            <section>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+            </section>
         </div>
     </div>
 </form>
