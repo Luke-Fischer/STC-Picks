@@ -16,6 +16,7 @@ namespace STC_Picks.Models
 		[Required]
         [DisplayName("Access Key")]
         public string accessCode { get; set; }
+        public int score { get; set; }
 
 		//User picks
 		[Required]

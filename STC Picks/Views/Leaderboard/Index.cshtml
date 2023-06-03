@@ -1,0 +1,32 @@
+﻿﻿
+@model IEnumerable<User>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int place = 1;
+            int displayPlace = 0;
+            int currentScore = -1;
+            foreach(var obj in Model){
+                if(obj.score != currentScore)
+                {
+                    displayPlace = place;
+                }
+                <tr>
+                    <th scope="row">@displayPlace</th>
+                    <td><strong><a style="text-decoration:none" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@obj.fullName</a></strong></td>
+                    <td>@obj.score</td>
+                </tr>
+                currentScore = obj.score;
+                place++;
+            }
+        }
+    </tbody>
+</table>

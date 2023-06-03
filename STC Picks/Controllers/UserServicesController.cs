@@ -28,6 +28,7 @@ namespace STC_Picks.Controllers
         public IActionResult ValidateEntrant(User user)
         {
             user.fullName = user.firstName.Trim() + " " + user.lastName.Trim();
+            user.score = 16;
             var userList = _db.Users.ToList();
             if (userList.Count() > 0)
             {
@@ -76,11 +77,13 @@ namespace STC_Picks.Controllers
             ViewBag.ErrorMessage = "Not a valid access key.";
             return View(user);
         }
+
         [ResponseCache(Duration = 30, NoStore = true)]
         public IActionResult EditPicks(User user)
         {
             return View(user);
         }
+        
         [ResponseCache(Duration = 30, NoStore = true)]
         public IActionResult UpdatedPicks(User user)
         {

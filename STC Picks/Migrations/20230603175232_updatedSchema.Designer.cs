@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using STC_Picks.Data;
 
@@ -10,9 +11,11 @@ using STC_Picks.Data;
 namespace STC_Picks.Migrations
 {
     [DbContext(typeof(STCDbContext))]
-    partial class STCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230603175232_updatedSchema")]
+    partial class updatedSchema
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
