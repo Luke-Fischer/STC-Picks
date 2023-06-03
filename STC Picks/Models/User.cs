@@ -14,7 +14,8 @@ namespace STC_Picks.Models
         [DisplayName("Last Name")]
         public string lastName { get; set; }
 		[Required]
-		public string accessCode { get; set; }
+        [DisplayName("Access Key")]
+        public string accessCode { get; set; }
 
 		//User picks
 		[Required]

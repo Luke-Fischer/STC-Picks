@@ -1,21 +1,23 @@
 ﻿@model User
 
-<form asp-controller="UserServices" asp-action="ValidateEntrant">
+<form>
     <div style="position:relative; width:75%; left:13.5%;">
-        <h1 style="text-align:center;">Enter Your Picks</h1>
+        <h1 style="text-align:center;">Your picks have been submitted!</h1>
+        <br />
+        <h3 style="text-align:center;">Please use the access code below to view or edit your picks before the deadline. You can access this portal from the "Edit Picks" button on the home screen.</h3>
+        <br />
+        <strong><h1 style="text-align:center;">@Model.accessCode</h1></strong>
         <br />
         <!-- first name input -->
         <div style="display:grid; grid-template-columns: 1fr 1fr;">
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="firstName"></label></strong>
-                <input asp-for="firstName" class="form-control" />
-                <span asp-validation-for="firstName" class="text-danger"></span>
+                <input asp-for="firstName" disabled class="form-control" />
             </section>
             <!-- last name input -->
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="lastName"></label></strong>
-                <input asp-for="lastName" class="form-control" />
-                <span asp-validation-for="lastName" class="text-danger"></span>
+                <input asp-for="lastName" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
                 <h2 style="color:#1775E1">Men's Draw</h2>
@@ -26,44 +28,35 @@
             <!-- Men's' input -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male1"></label>
-                <input asp-for="male1" class="form-control" />
-                <span asp-validation-for="male1" class="text-danger"></span>
-
+                <input asp-for="male1" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male2"></label>
-                <input asp-for="male2" class="form-control" />
-                <span asp-validation-for="male2" class="text-danger"></span>
+                <input asp-for="male2" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male3"></label>
-                <input asp-for="male3" class="form-control" />
-                <span asp-validation-for="male3" class="text-danger"></span>
+                <input asp-for="male3" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male4"></label>
-                <input asp-for="male4" class="form-control" />
-                <span asp-validation-for="male4" class="text-danger"></span>
+                <input asp-for="male4" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male5"></label>
-                <input asp-for="male5" class="form-control" />
-                <span asp-validation-for="male5" class="text-danger"></span>
+                <input asp-for="male5" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male6"></label>
-                <input asp-for="male6" class="form-control" />
-                <span asp-validation-for="male6" class="text-danger"></span>
+                <input asp-for="male6" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male7"></label>
-                <input asp-for="male7" class="form-control" />
-                <span asp-validation-for="male7" class="text-danger"></span>
+                <input asp-for="male7" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="male8"></label>
-                <input asp-for="male8" class="form-control" />
-                <span asp-validation-for="male8" class="text-danger"></span>
+                <input asp-for="male8" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
                 <h2 style="color:#DA2C43">Women's Draw</h2>
@@ -73,46 +66,38 @@
             <!-- Womens input -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female1"></label>
-                <input asp-for="female1" class="form-control" />
-                <span asp-validation-for="female1" class="text-danger"></span>
+                <input asp-for="female1" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female2"></label>
-                <input asp-for="female2" class="form-control" />
-                <span asp-validation-for="female2" class="text-danger"></span>
+                <input asp-for="female2" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female3"></label>
-                <input asp-for="female3" class="form-control" />
-                <span asp-validation-for="female3" class="text-danger"></span>
+                <input asp-for="female3" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female4"></label>
-                <input asp-for="female4" class="form-control" />
-                <span asp-validation-for="female4" class="text-danger"></span>
+                <input asp-for="female4" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female5"></label>
-                <input asp-for="female5" class="form-control" />
-                <span asp-validation-for="female5" class="text-danger"></span>
+                <input asp-for="female5" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female6"></label>
-                <input asp-for="female6" class="form-control" />
-                <span asp-validation-for="female6" class="text-danger"></span>
+                <input asp-for="female6" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female7"></label>
-                <input asp-for="female7" class="form-control" />
-                <span asp-validation-for="female7" class="text-danger"></span>
+                <input asp-for="female7" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:5px;">
                 <label asp-for="female8"></label>
-                <input asp-for="female8" class="form-control" />
-                <span asp-validation-for="female8" class="text-danger"></span>
+                <input asp-for="female8" disabled class="form-control" />
             </section>
             <section>
-                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" asp-controller="Home" asp-action="Index" class="btn btn-primary btn-block mb-4">Home</button>
             </section>
         </div>
     </div>

@@ -10,6 +10,7 @@
                 <strong><label asp-for="firstName"></label></strong>
                 <input asp-for="firstName" class="form-control" />
                 <span asp-validation-for="firstName" class="text-danger"></span>
+                <p class="text-danger">@ViewBag.ErrorMessage</p>
             </section>
             <!-- last name input -->
             <section style="width:95%; margin:5px;">

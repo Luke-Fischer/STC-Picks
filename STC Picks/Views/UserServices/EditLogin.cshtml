@@ -1,0 +1,19 @@
+﻿@model User
+
+<form asp-controller="UserServices" asp-action="EditLoginFailure">
+    <div style="position:relative; width:50%; left:25%; top:90px;">
+        <h1 style="text-align:center;">Enter Your Access Code</h1>
+        <br />
+        <!-- Email input -->
+        <div class="form-outline;">
+            <label asp-for="accessCode"></label>
+            <input asp-for="accessCode" class="form-control" />
+        </div>
+        <br />
+        <!-- Register buttons -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+            <p>Forgot your access code? Email <a href="mailto:lukefischer959@gmail.com" target="_blank">lukefischer959@gmail.com</a> and he will send you it.</p>
+        </div>
+    </div>
+</form>

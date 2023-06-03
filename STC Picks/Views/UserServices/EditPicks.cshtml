@@ -1,6 +1,8 @@
 ﻿@model User
 
-<form asp-controller="UserServices" asp-action="ValidateEntrant">
+<partial name="_Notification" />
+
+<form asp-controller="UserServices" asp-action="UpdatedPicks">
     <div style="position:relative; width:75%; left:13.5%;">
         <h1 style="text-align:center;">Enter Your Picks</h1>
         <br />
@@ -8,14 +10,12 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr;">
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="firstName"></label></strong>
-                <input asp-for="firstName" class="form-control" />
-                <span asp-validation-for="firstName" class="text-danger"></span>
+                <input asp-for="firstName" disabled class="form-control" />
             </section>
             <!-- last name input -->
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="lastName"></label></strong>
-                <input asp-for="lastName" class="form-control" />
-                <span asp-validation-for="lastName" class="text-danger"></span>
+                <input asp-for="lastName" disabled class="form-control" />
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
                 <h2 style="color:#1775E1">Men's Draw</h2>
@@ -112,7 +112,10 @@
                 <span asp-validation-for="female8" class="text-danger"></span>
             </section>
             <section>
-                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-success btn-block mb-4">Update</button>
+            </section>
+            <section>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" asp-controller="Home" asp-action="Index" class="btn btn-primary btn-block mb-4">Home</button>
             </section>
         </div>
     </div>
