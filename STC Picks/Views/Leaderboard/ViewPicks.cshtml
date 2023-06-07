@@ -11,81 +11,159 @@
             </section>
             <section>
             </section>
-
-            <!-- Men's' input -->
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male1"></label>
-                <input asp-for="male1" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male2"></label>
-                <input asp-for="male2" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male3"></label>
-                <input asp-for="male3" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male4"></label>
-                <input asp-for="male4" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male5"></label>
-                <input asp-for="male5" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male6"></label>
-                <input asp-for="male6" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male7"></label>
-                <input asp-for="male7" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="male8"></label>
-                <input asp-for="male8" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:25px 15px 15px 4px;">
-                <h2 style="color:#DA2C43">Women's Draw</h2>
-            </section>
-            <section>
-            </section>
-            <!-- Womens input -->
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female1"></label>
-                <input asp-for="female1" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female2"></label>
-                <input asp-for="female2" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female3"></label>
-                <input asp-for="female3" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female4"></label>
-                <input asp-for="female4" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female5"></label>
-                <input asp-for="female5" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female6"></label>
-                <input asp-for="female6" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female7"></label>
-                <input asp-for="female7" disabled class="form-control" />
-            </section>
-            <section style="width:95%; margin:5px;">
-                <label asp-for="female8"></label>
-                <input asp-for="female8" disabled class="form-control" />
-            </section>
-            <section>
-                <button asp-controller="Leaderboard" asp-action="Index" style="width:65%; margin:15px 15px 15px 4.5px;" class="btn btn-primary btn-block mb-4">Back</button>
-            </section>
+            @{
+                string[] EliminatedPlayers = new string[3] {
+                    "asd",
+                    "a",
+                    "Djokovic"
+                                            };
+                string[] colourArr = new string[16];
+                for(int i = 0; i < 16; i++)
+                {
+                    colourArr[i] = "#98fb98";
+                }
+                for(int i = 0; i < EliminatedPlayers.Length; i++)
+                {
+                    if(Model.male1 == EliminatedPlayers[i])
+                    {
+                        colourArr[0] = "#da2c43";
+                    }
+                    if (Model.male2 == EliminatedPlayers[i])
+                    {
+                        colourArr[1] = "#da2c43";
+                    }
+                    if (Model.male3 == EliminatedPlayers[i])
+                    {
+                        colourArr[2] = "#da2c43";
+                    }
+                    if (Model.male4 == EliminatedPlayers[i])
+                    {
+                        colourArr[3] = "#da2c43";
+                    }
+                    if (Model.male5 == EliminatedPlayers[i])
+                    {
+                        colourArr[4] = "#da2c43";
+                    }
+                    if (Model.male6 == EliminatedPlayers[i])
+                    {
+                        colourArr[5] = "#da2c43";
+                    }
+                    if (Model.male7 == EliminatedPlayers[i])
+                    {
+                        colourArr[6] = "#da2c43";
+                    }
+                    if (Model.male8 == EliminatedPlayers[i])
+                    {
+                        colourArr[7] = "#da2c43";
+                    }
+                    if (Model.female1 == EliminatedPlayers[i])
+                    {
+                        colourArr[8] = "#da2c43";
+                    }
+                    if (Model.female2 == EliminatedPlayers[i])
+                    {
+                        colourArr[9] = "#da2c43";
+                    }
+                    if (Model.female3 == EliminatedPlayers[i])
+                    {
+                        colourArr[10] = "#da2c43";
+                    }
+                    if (Model.female4 == EliminatedPlayers[i])
+                    {
+                        colourArr[11] = "#da2c43";
+                    }
+                    if (Model.female5 == EliminatedPlayers[i])
+                    {
+                        colourArr[12] = "#da2c43";
+                    }
+                    if (Model.female6 == EliminatedPlayers[i])
+                    {
+                        colourArr[13] = "#da2c43";
+                    }
+                    if (Model.female7 == EliminatedPlayers[i])
+                    {
+                        colourArr[14] = "#da2c43";
+                    }
+                    if (Model.female8 == EliminatedPlayers[i])
+                    {
+                        colourArr[15] = "#da2c43";
+                    }
+                }
+                <!-- Men's' input -->
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male1"></label>
+                    <input style="background-color:@colourArr[0];" asp-for="male1" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male5"></label>
+                    <input style="background-color:@colourArr[4];" asp-for="male5" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male2"></label>
+                    <input style="background-color:@colourArr[1];" asp-for="male2" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male6"></label>
+                    <input style="background-color:@colourArr[5];" asp-for="male6" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male3"></label>
+                    <input style="background-color:@colourArr[2];" asp-for="male3" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male7"></label>
+                    <input style="background-color:@colourArr[6];" asp-for="male7" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male4"></label>
+                    <input style="background-color:@colourArr[3];" asp-for="male4" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="male8"></label>
+                    <input style="background-color:@colourArr[7];" asp-for="male8" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:25px 15px 15px 4px;">
+                    <h2 style="color:#DA2C43">Women's Draw</h2>
+                </section>
+                <section>
+                </section>
+                <!-- Womens input -->
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female1"></label>
+                    <input style="background-color:@colourArr[8];" asp-for="female1" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female5"></label>
+                    <input style="background-color:@colourArr[12];" asp-for="female5" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female2"></label>
+                    <input style="background-color:@colourArr[9];" asp-for="female2" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female6"></label>
+                    <input style="background-color:@colourArr[13];" asp-for="female6" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female3"></label>
+                    <input style="background-color:@colourArr[10];" asp-for="female3" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female7"></label>
+                    <input style="background-color:@colourArr[14];" asp-for="female7" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female4"></label>
+                    <input style="background-color:@colourArr[11];" asp-for="female4" disabled class="form-control" />
+                </section>
+                <section style="width:95%; margin:5px;">
+                    <label asp-for="female8"></label>
+                    <input style="background-color:@colourArr[15];" asp-for="female8" disabled class="form-control" />
+                </section>
+                <section>
+                    <button asp-controller="Leaderboard" asp-action="Index" style="width:65%; margin:15px 15px 15px 4.5px;" class="btn btn-primary btn-block mb-4">Back</button>
+                </section>
+            }
         </div>
     </div>
 </form>
