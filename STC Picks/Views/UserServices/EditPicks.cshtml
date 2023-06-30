@@ -1,4 +1,8 @@
-﻿@model User
+﻿@{
+    ViewData["Title"] = "Edit Picks";
+}
+
+@model User
 
 <partial name="_Notification" />
 
@@ -23,124 +27,195 @@
             <section>
             </section>
             <!-- Men's' input -->
+            <!--Men's Q1-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male1"></label>
                 <select asp-for="male1" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">C. ALCARAZ (1)</option>
+                    <option class="text-dark">J. CHARDY</option>
+                    <option class="text-dark">A. MULLER</option>
+                    <option class="text-dark">A. RINDERKNECH</option>
+                    <option class="text-dark">J. KUBLER</option>
+                    <option class="text-dark">U. HUMBERT</option>
+                    <option class="text-dark">M. CECCHINATO</option>
+                    <option class="text-dark">N. JARRY (25)</option>
+                    <option class="text-dark">A. ZVEREV (19)</option>
+                    <option class="text-dark">G. BROUWER</option>
+                    <option class="text-dark">M. HUESLER</option>
+                    <option class="text-dark">Y. WATANUKI</option>
+                    <option class="text-dark">M. BERRETTINI</option>
+                    <option class="text-dark">L. SONEGO</option>
+                    <option class="text-dark">K. COPPEJANS</option>
+                    <option class="text-dark">A. DE MINAUR (15)</option>
                 </select>
                 <span asp-validation-for="male1" class="text-danger"></span>
-
             </section>
+            <!--Men's Q5-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male5"></label>
                 <select asp-for="male5" class="form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">J. SINNER (8)</option>
+                    <option class="text-dark">J. CERUNDOLO</option>
+                    <option class="text-dark">M. KECMANOVIC</option>
+                    <option class="text-dark">D. SCHWARTZMAN</option>
+                    <option class="text-dark">A. VUKIC</option>
+                    <option class="text-dark">D. ALTMAIER</option>
+                    <option class="text-dark">Q. HALYS</option>
+                    <option class="text-dark">D. EVANS (27)</option>
+                    <option class="text-dark">Y. NISHIOKA (24)</option>
+                    <option class="text-dark">D. GALAN</option>
+                    <option class="text-dark">D. KOEPFER</option>
+                    <option class="text-dark">O. OTTE</option>
+                    <option class="text-dark">M. YMER</option>
+                    <option class="text-dark">A. MOLCAN</option>
+                    <option class="text-dark">Y. HANFMANN</option>
+                    <option class="text-dark">T. FRITZ (9)</option>
                 </select>
                 <span asp-validation-for="male5" class="text-danger"></span>
             </section>
+            <!--Men's Q2-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male2"></label>
                 <select asp-for="male2" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">F. TIAFOE (10)</option>
+                    <option class="text-dark">Y. WU</option>
+                    <option class="text-dark">D. STRICKER</option>
+                    <option class="text-dark">A. POPYRIN</option>
+                    <option class="text-dark">I. IVASHKA</option>
+                    <option class="text-dark">F. CORIA</option>
+                    <option class="text-dark">S. SHIMABUKURO</option>
+                    <option class="text-dark">G. DIMITROV (21)</option>
+                    <option class="text-dark">A. DAVIDOVICH FOKINA (31)</option>
+                    <option class="text-dark">A. FILS</option>
+                    <option class="text-dark">Z. ZHANG</option>
+                    <option class="text-dark">B. VAN DE ZANDSCHULP</option>
+                    <option class="text-dark">M. ARNALDI</option>
+                    <option class="text-dark">R. CARBELLES BAENA</option>
+                    <option class="text-dark">G. LOFFHAGEN</option>
+                    <option class="text-dark">H. RUNE (6)</option>
                 </select>
                 <span asp-validation-for="male2" class="text-danger"></span>
             </section>
+            <!--Men's Q6-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male6"></label>
                 <select asp-for="male6" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">B. CORIC (13)</option>
+                    <option class="text-dark">G. PELLA</option>
+                    <option class="text-dark">B. BONZI</option>
+                    <option class="text-dark">H. MAYOT</option>
+                    <option class="text-dark">C. MOUTET</option>
+                    <option class="text-dark">R. GASQUET</option>
+                    <option class="text-dark">R. SAFIULLIN</option>
+                    <option class="text-dark">R. BAUTISTA AGUT (20)</option>
+                    <option class="text-dark">B. D. SHAPOVALOV (26)</option>
+                    <option class="text-dark">R. ALBOT</option>
+                    <option class="text-dark">L. HARRIS</option>
+                    <option class="text-dark">G. BARRERE</option>
+                    <option class="text-dark">L. BROADY</option>
+                    <option class="text-dark">C. LESTIENNE</option>
+                    <option class="text-dark">L. LOKOLI</option>
+                    <option class="text-dark">C. RUUD (4)</option>
                 </select>
                 <span asp-validation-for="male6" class="text-danger"></span>
             </section>
+            <!--Men's Q3-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male3"></label>
                 <select asp-for="male3" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">D. MEDVEDEV (3)</option>
+                    <option class="text-dark">A. FERY</option>
+                    <option class="text-dark">A. MANNARINO</option>
+                    <option class="text-dark">A. SHEVCHENKO</option>
+                    <option class="text-dark">M. GIRON</option>
+                    <option class="text-dark">H. DELLIEN</option>
+                    <option class="text-dark">M. FUCSOVICS</option>
+                    <option class="text-dark">T. GRIEKSPOOR (28)</option>
+                    <option class="text-dark">F. CERUNDOLO (18)</option>
+                    <option class="text-dark">N. BORGES</option>
+                    <option class="text-dark">J. LEHECKA</option>
+                    <option class="text-dark">S. OFNER</option>
+                    <option class="text-dark">M. RAONIC</option>
+                    <option class="text-dark">D. NOVAK</option>
+                    <option class="text-dark">S. MOCHIZUKI</option>
+                    <option class="text-dark">T. PAUL (16)</option>
                 </select>
                 <span asp-validation-for="male3" class="text-danger"></span>
             </section>
+            <!--Men's Q7-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male7"></label>
                 <select asp-for="male7" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">A. RUBLEV (7)</option>
+                    <option class="text-dark">M. PURCELL</option>
+                    <option class="text-dark">L. VAN ASSCHE</option>
+                    <option class="text-dark">A. KARATSEV</option>
+                    <option class="text-dark">S. BAEZ</option>
+                    <option class="text-dark">T. BARRIOS VERA</option>
+                    <option class="text-dark">D. GOFFIN</option>
+                    <option class="text-dark">N. KYRGIOS (30)</option>
+                    <option class="text-dark">A. BUBLIK (23)</option>
+                    <option class="text-dark">M. MCDONALD</option>
+                    <option class="text-dark">J. WOLF</option>
+                    <option class="text-dark">E. COUACAUD</option>
+                    <option class="text-dark">M. MARTERER</option>
+                    <option class="text-dark">B. GOJO</option>
+                    <option class="text-dark">F. KRAJINOVIC</option>
+                    <option class="text-dark">F. AUGER-ALIASSIME (11)</option>
                 </select>
                 <span asp-validation-for="male7" class="text-danger"></span>
             </section>
+            <!--Men's Q4-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male4"></label>
                 <select asp-for="male4" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">C. NORRIE (12)</option>
+                    <option class="text-dark">T. MACHAC</option>
+                    <option class="text-dark">C. EUBANKS</option>
+                    <option class="text-dark">T. MONTEIRO</option>
+                    <option class="text-dark">C. O'CONNELL</option>
+                    <option class="text-dark">H. MEDJEDOVIC</option>
+                    <option class="text-dark">J. VESELY</option>
+                    <option class="text-dark">S. KORDA (22)</option>
+                    <option class="text-dark">B. SHELTON (32)</option>
+                    <option class="text-dark">T. DANIEL</option>
+                    <option class="text-dark">M. CRESSY</option>
+                    <option class="text-dark">L. DJERE</option>
+                    <option class="text-dark">R. PENISTON</option>
+                    <option class="text-dark">A. MURRAY</option>
+                    <option class="text-dark">D. THIEM</option>
+                    <option class="text-dark">S. TSITSIPAS (5)</option>
                 </select>
                 <span asp-validation-for="male4" class="text-danger"></span>
             </section>
+            <!--Men's Q8-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male8"></label>
                 <select asp-for="male8" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">N. Djokovic</option>
-                    <option class="text-dark">R. Federer</option>
-                    <option class="text-dark">R. Nadal</option>
-                    <option class="text-dark">A. Murray</option>
-                    <option class="text-dark">M. Del Potro</option>
-                    <option class="text-dark">D. Shapovalov</option>
-                    <option class="text-dark">S. Wawrinka</option>
-                    <option class="text-dark">A. Agassi</option>
+                    <option class="text-dark">L. MUSETTI (14)</option>
+                    <option class="text-dark">J. VARILLAS</option>
+                    <option class="text-dark">J. ISNER</option>
+                    <option class="text-dark">J. MUNAR</option>
+                    <option class="text-dark">J. CHOINSKI</option>
+                    <option class="text-dark">D. LAJOVIC</option>
+                    <option class="text-dark">A. RAMOS-VINOLAS</option>
+                    <option class="text-dark">H. HURKACZ (17)</option>
+                    <option class="text-dark">T. ETCHEVERRY (29)</option>
+                    <option class="text-dark">B. ZAPATA MIRALLES</option>
+                    <option class="text-dark">E. RUUSUVUORI</option>
+                    <option class="text-dark">S. WAWRINKA</option>
+                    <option class="text-dark">J. THOMPSON</option>
+                    <option class="text-dark">B. NAKASHIMA</option>
+                    <option class="text-dark">P. CACHIN</option>
+                    <option class="text-dark">N. DJOKOVIC (2)</option>
                 </select>
                 <span asp-validation-for="male8" class="text-danger"></span>
             </section>
@@ -150,124 +225,196 @@
             <section>
             </section>
             <!-- Womens input -->
+            <!-- Women's Q1' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female1"></label>
                 <select asp-for="female1" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">I. SWIATEK (1)</option>
+                    <option class="text-dark">L. ZHU</option>
+                    <option class="text-dark">M. TREVISAN</option>
+                    <option class="text-dark">S. SORRIBES TORMO</option>
+                    <option class="text-dark">D. PARRY</option>
+                    <option class="text-dark">H. DART</option>
+                    <option class="text-dark">L. FRUHVIRTOVA</option>
+                    <option class="text-dark">P. MARTIC (30)</option>
+                    <option class="text-dark">M. LINETTE (23)</option>
+                    <option class="text-dark">J. TEICHMANN</option>
+                    <option class="text-dark">B. STRYCOVA</option>
+                    <option class="text-dark">M. ZANEVSKA</option>
+                    <option class="text-dark">D. COLLINS</option>
+                    <option class="text-dark">J. GRABHER</option>
+                    <option class="text-dark">K. SWAN</option>
+                    <option class="text-dark">B. BENCIC (14)</option>
                 </select>
                 <span asp-validation-for="female1" class="text-danger"></span>
 
             </section>
+            <!-- Women's Q5' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female5"></label>
                 <select asp-for="female5" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">O. JABEUR (6)</option>
+                    <option class="text-dark">M. FRECH</option>
+                    <option class="text-dark">Y. BONAVENTURE</option>
+                    <option class="text-dark">Z. BAI</option>
+                    <option class="text-dark">A. BONDAR</option>
+                    <option class="text-dark">B. ANDREESCU</option>
+                    <option class="text-dark">J. BOUZAS MANEIRO</option>
+                    <option class="text-dark">A. KALININA (26)</option>
+                    <option class="text-dark">KA. PLISKOVA (18)</option>
+                    <option class="text-dark">N. STEVANOVIC</option>
+                    <option class="text-dark">C. ZHAO</option>
+                    <option class="text-dark">T. KORPATSCH</option>
+                    <option class="text-dark">A. SASNOVICH</option>
+                    <option class="text-dark">N. PARRIZAS DIAZ</option>
+                    <option class="text-dark">J. PAOLINI</option>
+                    <option class="text-dark">P. KVITOVA (9)</option>
                 </select>
                 <span asp-validation-for="female5" class="text-danger"></span>
             </section>
+            <!-- Women's Q2' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female2"></label>
                 <select asp-for="female2" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">D. KASATKINA (11)</option>
+                    <option class="text-dark">C. DOLEHIDE</option>
+                    <option class="text-dark">J. BURRAGE</option>
+                    <option class="text-dark">C. MCNALLY</option>
+                    <option class="text-dark">N. PODOROSKA</option>
+                    <option class="text-dark">T. MARTINCOVA</option>
+                    <option class="text-dark">Y. YUAN</option>
+                    <option class="text-dark">V. AZARENKA (19)</option>
+                    <option class="text-dark">E. MERTENS (28)</option>
+                    <option class="text-dark">V. HRUNCAKOVA</option>
+                    <option class="text-dark">V. WILLIAMS</option>
+                    <option class="text-dark">E. SVITOLINA</option>
+                    <option class="text-dark">S. HUNTER</option>
+                    <option class="text-dark">X. WANG</option>
+                    <option class="text-dark">S. KENIN</option>
+                    <option class="text-dark">C. GAUFF (7)</option>
                 </select>
                 <span asp-validation-for="female2" class="text-danger"></span>
             </section>
+            <!-- Women's Q6' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female6"></label>
                 <select asp-for="female6" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">B. HADDAD MAIA (13)</option>
+                    <option class="text-dark">Y. PUTINTSEVA</option>
+                    <option class="text-dark">J. CRISTIAN</option>
+                    <option class="text-dark">L. BRONZETTI</option>
+                    <option class="text-dark">S. CIRSTEA</option>
+                    <option class="text-dark">T. MARIA</option>
+                    <option class="text-dark">G. MINNEN</option>
+                    <option class="text-dark">J. OSTAPENKO (17)</option>
+                    <option class="text-dark">B. PERA (27)</option>
+                    <option class="text-dark">V. TOMOVA</option>
+                    <option class="text-dark">K. BOULTER</option>
+                    <option class="text-dark">D. SAVILLE</option>
+                    <option class="text-dark">N. HIBINO</option>
+                    <option class="text-dark">A. CORNET</option>
+                    <option class="text-dark">S. ROGERS</option>
+                    <option class="text-dark">E. RYBAKINA (3)</option>
                 </select>
                 <span asp-validation-for="female6" class="text-danger"></span>
             </section>
+            <!-- Women's Q3' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female3"></label>
                 <select asp-for="female3" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">J. PEGULA (4)</option>
+                    <option class="text-dark">L. DAVIS</option>
+                    <option class="text-dark">C. BUCSA</option>
+                    <option class="text-dark">K. RAKHIMOVA</option>
+                    <option class="text-dark">C. OSORIO</option>
+                    <option class="text-dark">E. COCCIARETTO</option>
+                    <option class="text-dark">R. MASAROVA</option>
+                    <option class="text-dark">M. SHERIF (31)</option>
+                    <option class="text-dark">Q. ZHENG (24)</option>
+                    <option class="text-dark">K. SINIAKOVA</option>
+                    <option class="text-dark">L. TSURENKO</option>
+                    <option class="text-dark">C. LIU</option>
+                    <option class="text-dark">A. PARKS</option>
+                    <option class="text-dark">A. FRIEDSAM</option>
+                    <option class="text-dark">A. BOGDAN</option>
+                    <option class="text-dark">L. SAMSONOVA (15)</option>
                 </select>
                 <span asp-validation-for="female3" class="text-danger"></span>
             </section>
+            <!-- Women's Q7' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female7"></label>
                 <select asp-for="female7" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">L. Shapovalov</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">M. SAKKARI (8)</option>
+                    <option class="text-dark">M. KOSTYUK</option>
+                    <option class="text-dark">A. RISKE-AMRITRAJ</option>
+                    <option class="text-dark">P. BADOSA</option>
+                    <option class="text-dark">V. GOLUBIC</option>
+                    <option class="text-dark">A. SCHMIEDLOVA</option>
+                    <option class="text-dark">S. KARTAL</option>
+                    <option class="text-dark">M. KEYS (25)</option>
+                    <option class="text-dark">A. POTAPOVA (22)</option>
+                    <option class="text-dark">C. NAEF</option>
+                    <option class="text-dark">K. JUVAN</option>
+                    <option class="text-dark">M. BETOVA</option>
+                    <option class="text-dark">M. ANDREEVA</option>
+                    <option class="text-dark">X. WANG</option>
+                    <option class="text-dark">H. WATSON</option>
+                    <option class="text-dark">B. KREJCIKOVA (10)</option>
                 </select>
                 <span asp-validation-for="female7" class="text-danger"></span>
             </section>
+            <!-- Women's Q4' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female4"></label>
                 <select asp-for="female4" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">V. KUDERMETOVA (12)</option>
+                    <option class="text-dark">K. KANEPI</option>
+                    <option class="text-dark">M. VONDROUSOVA</option>
+                    <option class="text-dark">P. STEARNS</option>
+                    <option class="text-dark">S. STEPHENS</option>
+                    <option class="text-dark">R. PETERSON</option>
+                    <option class="text-dark">S. ZHANG</option>
+                    <option class="text-dark">D. VEKIC (20)</option>
+                    <option class="text-dark">M. BOUZKOVA (32)</option>
+                    <option class="text-dark">S. WALTERT</option>
+                    <option class="text-dark">A. KONTAVEIT</option>
+                    <option class="text-dark">L. STEFANINI</option>
+                    <option class="text-dark">K. BAINDL</option>
+                    <option class="text-dark">L. FERNANDEZ</option>
+                    <option class="text-dark">K. VOLYNETS</option>
+                    <option class="text-dark">C. GARCIA (5)</option>
                 </select>
                 <span asp-validation-for="female4" class="text-danger"></span>
             </section>
+            <!-- Women's Q8' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female8"></label>
                 <select asp-for="female8" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">S. Williams</option>
-                    <option class="text-dark">V. Williams</option>
-                    <option class="text-dark">C. Gauff</option>
-                    <option class="text-dark">M. Sharapova</option>
-                    <option class="text-dark">V. Azarenka</option>
-                    <option class="text-dark">M. Navratilova</option>
-                    <option class="text-dark">S. Graf</option>
-                    <option class="text-dark">B. King</option>
+                    <option class="text-dark">K. MUCHOVA (16)</option>
+                    <option class="text-dark">J. NIEMEIER</option>
+                    <option class="text-dark">L. NOSKOVA</option>
+                    <option class="text-dark">D. GALFI</option>
+                    <option class="text-dark">M. BRENGLE</option>
+                    <option class="text-dark">S. ERRANI</option>
+                    <option class="text-dark">E. NAVARRO</option>
+                    <option class="text-dark">E. ALEXANDROVA (21)</option>
+                    <option class="text-dark">I. BEGU (29)</option>
+                    <option class="text-dark">R. MARINO</option>
+                    <option class="text-dark">Y. WICKMAYER</option>
+                    <option class="text-dark">A. BLINKOVA</option>
+                    <option class="text-dark">V. GRACHEVA</option>
+                    <option class="text-dark">C. GIORGI</option>
+                    <option class="text-dark">P. UDVARDY</option>
+                    <option class="text-dark">A. SABALENKA (2)</option>
                 </select>
                 <span asp-validation-for="female8" class="text-danger"></span>
             </section>

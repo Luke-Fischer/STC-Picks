@@ -2,10 +2,11 @@
 {
     public class Eliminated
     {
-        public string[] EliminatedPlayers = new string[3] { 
+        public string[] EliminatedPlayers = new string[4] { 
             "asd", 
             "a", 
-            "Djokovic" 
+            "Djokovic" ,
+            "C. ALCARAZ (1)"
         };
         public int IsEliminated(string name)
         {

@@ -1,4 +1,8 @@
-﻿@model User
+﻿@{
+    ViewData["Title"] = "Pick Em";
+}
+
+@model User
 
 <form asp-controller="UserServices" asp-action="ValidateEntrant">
     <div style="position:relative; width:75%; left:13.5%;">
@@ -18,7 +22,7 @@
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
-                <h2 style="color:#1775E1">Men's Draw</h2>
+                <a style="text-decoration:none;" href="https://www.wimbledon.com/en_GB/draws/gentlemens-singles" target="_blank"><h2 style="color:#1775E1">Men's Draw</h2></a>
             </section>
             <section>
             </section>
@@ -217,7 +221,7 @@
                 <span asp-validation-for="male8" class="text-danger"></span>
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
-                <h2 style="color:#DA2C43">Women's Draw</h2>
+                <a style="text-decoration:none;" href="https://www.wimbledon.com/en_GB/draws/ladies-singles" target="_blank"><h2 style="color:#DA2C43">Women's Draw</h2></a>
             </section>
             <section>
             </section>
