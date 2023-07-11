@@ -4,9 +4,41 @@
 ﻿
 @model IEnumerable<User>
 
-<table class="table">
-    <thead>
+<h4>Last updated July 10th, 3:26pm.</h4>
+<br />
+<h3 class="text-center"><strong>TIE BREAKER: </strong></h3>
+<br />
+
+<table class="table" style="background-color:#007b22; color:white">
+    <thead style="background-color:#240046;">
+        <tr style="color:white">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Score</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <th scope="row">1</th>
+            <td><strong><a style="text-decoration:none; color:white;" asp-controller="Leaderboard" asp-action="Adam">Adam Monteith</a></strong></td>
+            <td>0</td>
+        </tr>
         <tr>
+            <th scope="row">1</th>
+            <td><strong><a style="text-decoration:none; color:white;" asp-controller="Leaderboard" asp-action="Will">Will Heaton</a></strong></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td><strong><a style="text-decoration:none; color:white;" asp-controller="Leaderboard" asp-action="Shaun">Shaun Y</a></strong></td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table" style="background-color:#007b22; color:white">
+    <thead style="background-color:#240046;">
+        <tr style="color:white">
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Score</th>
@@ -18,13 +50,18 @@
             int displayPlace = 0;
             int currentScore = -1;
             foreach(var obj in Model){
+                string dispName = obj.fullName;
+                if(dispName == "STEPHEN FISCHER")
+                {
+                    dispName = "Stephen Fischer";
+                }
                 if(obj.score != currentScore)
                 {
                     displayPlace = place;
                 }
                 <tr>
                     <th scope="row">@displayPlace</th>
-                    <td><strong><a style="text-decoration:none" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@obj.fullName</a></strong></td>
+                    <td><strong><a style="text-decoration:none; color:white;" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@dispName</a></strong></td>
                     <td>@obj.score</td>
                 </tr>
                 currentScore = obj.score;

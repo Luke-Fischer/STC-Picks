@@ -12,13 +12,13 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr;">
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="firstName"></label></strong>
-                <input asp-for="firstName" class="form-control" />
+                <input asp-for="firstName" disabled class="form-control" />
                 <span asp-validation-for="firstName" class="text-danger"></span>
             </section>
             <!-- last name input -->
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="lastName"></label></strong>
-                <input asp-for="lastName" class="form-control" />
+                <input asp-for="lastName" disabled class="form-control" />
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
@@ -29,9 +29,9 @@
 
             <!-- Men's' input -->
             <!--Men's Q1-->
-            <section style="width:95%; margin:5px;">
+            <section class="disabled" style="width:95%; margin:5px;">
                 <label asp-for="male1"></label>
-                <select asp-for="male1" class="selectpicker form-control">
+                <select asp-for="male1" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">C. ALCARAZ (1)</option>
                     <option class="text-dark">J. CHARDY</option>
@@ -55,7 +55,7 @@
             <!--Men's Q5-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male5"></label>
-                <select asp-for="male5" class="form-control">
+                <select asp-for="male5" disabled class="form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">J. SINNER (8)</option>
                     <option class="text-dark">J. CERUNDOLO</option>
@@ -79,7 +79,7 @@
             <!--Men's Q2-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male2"></label>
-                <select asp-for="male2" class="selectpicker form-control">
+                <select asp-for="male2" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">F. TIAFOE (10)</option>
                     <option class="text-dark">Y. WU</option>
@@ -103,7 +103,7 @@
             <!--Men's Q6-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male6"></label>
-                <select asp-for="male6" class="selectpicker form-control">
+                <select asp-for="male6" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">B. CORIC (13)</option>
                     <option class="text-dark">G. PELLA</option>
@@ -127,7 +127,7 @@
             <!--Men's Q3-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male3"></label>
-                <select asp-for="male3" class="selectpicker form-control">
+                <select asp-for="male3" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">D. MEDVEDEV (3)</option>
                     <option class="text-dark">A. FERY</option>
@@ -151,7 +151,7 @@
             <!--Men's Q7-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male7"></label>
-                <select asp-for="male7" class="selectpicker form-control">
+                <select asp-for="male7" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">A. RUBLEV (7)</option>
                     <option class="text-dark">M. PURCELL</option>
@@ -175,7 +175,7 @@
             <!--Men's Q4-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male4"></label>
-                <select asp-for="male4" class="selectpicker form-control">
+                <select asp-for="male4" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">C. NORRIE (12)</option>
                     <option class="text-dark">T. MACHAC</option>
@@ -199,7 +199,7 @@
             <!--Men's Q8-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male8"></label>
-                <select asp-for="male8" class="selectpicker form-control">
+                <select asp-for="male8" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">L. MUSETTI (14)</option>
                     <option class="text-dark">J. VARILLAS</option>
@@ -229,7 +229,7 @@
             <!-- Women's Q1' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female1"></label>
-                <select asp-for="female1" class="selectpicker form-control">
+                <select asp-for="female1" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">I. SWIATEK (1)</option>
                     <option class="text-dark">L. ZHU</option>
@@ -254,7 +254,7 @@
             <!-- Women's Q5' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female5"></label>
-                <select asp-for="female5" class="selectpicker form-control">
+                <select asp-for="female5" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">O. JABEUR (6)</option>
                     <option class="text-dark">M. FRECH</option>
@@ -278,7 +278,7 @@
             <!-- Women's Q2' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female2"></label>
-                <select asp-for="female2" class="selectpicker form-control">
+                <select asp-for="female2" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">D. KASATKINA (11)</option>
                     <option class="text-dark">C. DOLEHIDE</option>
@@ -302,7 +302,7 @@
             <!-- Women's Q6' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female6"></label>
-                <select asp-for="female6" class="selectpicker form-control">
+                <select asp-for="female6" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">B. HADDAD MAIA (13)</option>
                     <option class="text-dark">Y. PUTINTSEVA</option>
@@ -326,7 +326,7 @@
             <!-- Women's Q3' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female3"></label>
-                <select asp-for="female3" class="selectpicker form-control">
+                <select asp-for="female3" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">J. PEGULA (4)</option>
                     <option class="text-dark">L. DAVIS</option>
@@ -350,7 +350,7 @@
             <!-- Women's Q7' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female7"></label>
-                <select asp-for="female7" class="selectpicker form-control">
+                <select asp-for="female7" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">M. SAKKARI (8)</option>
                     <option class="text-dark">M. KOSTYUK</option>
@@ -374,7 +374,7 @@
             <!-- Women's Q4' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female4"></label>
-                <select asp-for="female4" class="selectpicker form-control">
+                <select asp-for="female4" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">V. KUDERMETOVA (12)</option>
                     <option class="text-dark">K. KANEPI</option>
@@ -398,7 +398,7 @@
             <!-- Women's Q8' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female8"></label>
-                <select asp-for="female8" class="selectpicker form-control">
+                <select asp-for="female8" disabled class="selectpicker form-control">
                     <option class="text-dark"></option>
                     <option class="text-dark">K. MUCHOVA (16)</option>
                     <option class="text-dark">J. NIEMEIER</option>
@@ -420,7 +420,7 @@
                 <span asp-validation-for="female8" class="text-danger"></span>
             </section>
             <section>
-                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4 disabled">Submit</button>
             </section>
         </div>
     </div>

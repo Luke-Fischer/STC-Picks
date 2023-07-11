@@ -28,5 +28,26 @@ namespace STC_Picks.Controllers
                 return NotFound();
             }
         }
+        public IActionResult Adam()
+        {
+            TiebreakerPicks Tpicks = new TiebreakerPicks();
+            Tpicks.MensSemiOne = "C. ALCARAZ (1)";
+            Tpicks.MensSemiTwo = "D. MEDVEDEV (3)";
+            Tpicks.MensSemiThree = "J. SINNER (8)";
+            Tpicks.MensSemiFour = "N. DJOKOVIC (2)";
+            Tpicks.WomensSemiOne = "I. SWIATEK (1)";
+            Tpicks.WomensSemiTwo = "J. PEGULA (4)";
+            Tpicks.WomensSemiThree = "E. RYBAKINA (3)";
+            Tpicks.WomensSemiFour = "A. SABALENKA (2)";
+            return View();
+        }
+        public IActionResult Will()
+        {
+            return View();
+        }
+        public IActionResult Shaun()
+        {
+            return View();
+        }
     }
 }

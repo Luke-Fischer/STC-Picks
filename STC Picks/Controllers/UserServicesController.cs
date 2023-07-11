@@ -42,8 +42,9 @@ namespace STC_Picks.Controllers
             }
             //Valid user and submission
             user.accessCode = randomAccessKey();
-            _db.Users.Add(user);
-            _db.SaveChanges();
+            //Ensure no new user can create picks
+            //_db.Users.Add(user);
+            //_db.SaveChanges();
             return RedirectToAction("Confirmation", user);
         }
         public IActionResult Confirmation(User user)
@@ -107,9 +108,12 @@ namespace STC_Picks.Controllers
                 currentUser.female6 = user.female6;
                 currentUser.female7 = user.female7;
                 currentUser.female8 = user.female8;
-                _db.Users.Update(currentUser);
-                _db.SaveChanges();
-                TempData["success"] = "Updated Successfully";
+                //Ensure no updates can be made
+                /*
+                *_db.Users.Update(currentUser);
+                *_db.SaveChanges();
+                *TempData["success"] = "Updated Successfully";
+                */
                 return RedirectToAction("EditPicks", currentUser);
             }
             else

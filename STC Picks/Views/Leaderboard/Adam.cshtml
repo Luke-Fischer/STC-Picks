@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Adam";
+}
+@model TiebreakerPicks
+
+<div style="position:relative; width:75%; left:13.5%;">
+    <h1 style="text-align:center;">Enter Your Picks</h1>
+    <br />
+    <!-- Players input -->
+    <div style="display:grid; grid-template-columns: 1fr 1fr;">
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemisOne"></label></strong>
+            <input asp-for="MensSemisOne" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemisTwo"></label></strong>
+            <input asp-for="MensSemisTwo" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemisThree"></label></strong>
+            <input asp-for="MensSemisThree" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemisFour"></label></strong>
+            <input asp-for="MensSemisFour" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemisOne"></label></strong>
+            <input asp-for="WomensSemisOne" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemisTwo"></label></strong>
+            <input asp-for="WomensSemisTwo" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemisThree"></label></strong>
+            <input asp-for="WomensSemisThree" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemisFour"></label></strong>
+            <input asp-for="WomensSemisFour" disabled class="form-control" />
+        </section>
+    </div>
+</div>
