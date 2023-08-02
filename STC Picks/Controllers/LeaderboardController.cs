@@ -39,15 +39,33 @@ namespace STC_Picks.Controllers
             Tpicks.WomensSemiTwo = "J. PEGULA (4)";
             Tpicks.WomensSemiThree = "E. RYBAKINA (3)";
             Tpicks.WomensSemiFour = "A. SABALENKA (2)";
-            return View();
+            return View(Tpicks);
         }
         public IActionResult Will()
         {
-            return View();
+            TiebreakerPicks Tpicks = new TiebreakerPicks();
+            Tpicks.MensSemiOne = "C. ALCARAZ (1)";
+            Tpicks.MensSemiTwo = "D. MEDVEDEV (3)";
+            Tpicks.MensSemiThree = "J. SINNER (8)";
+            Tpicks.MensSemiFour = "N. DJOKOVIC (2)";
+            Tpicks.WomensSemiOne = "I. SWIATEK (1)";
+            Tpicks.WomensSemiTwo = "J. PEGULA (4)";
+            Tpicks.WomensSemiThree = "O. JABEUR (6)";
+            Tpicks.WomensSemiFour = "A. SABALENKA (2)";
+            return View(Tpicks);
         }
         public IActionResult Shaun()
         {
-            return View();
+            TiebreakerPicks Tpicks = new TiebreakerPicks();
+            Tpicks.MensSemiOne = " ";
+            Tpicks.MensSemiTwo = " ";
+            Tpicks.MensSemiThree = " ";
+            Tpicks.MensSemiFour = " ";
+            Tpicks.WomensSemiOne = " ";
+            Tpicks.WomensSemiTwo = " ";
+            Tpicks.WomensSemiThree = " ";
+            Tpicks.WomensSemiFour = " ";
+            return View(Tpicks);
         }
     }
 }

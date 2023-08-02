@@ -1,3 +1,44 @@
 ﻿@{
     ViewData["Title"] = "Will";
 }
+@model TiebreakerPicks
+
+<div style="position:relative; width:75%; left:13.5%;">
+    <h1 style="text-align:center;">Will Heaton's Picks</h1>
+    <br />
+    <!-- Players input -->
+    <div style="display:grid; grid-template-columns: 1fr 1fr;">
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemiOne"></label></strong>
+            <input style="background-color:#98fb98" asp-for="MensSemiOne" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemiTwo"></label></strong>
+            <input style="background-color:#98fb98" asp-for="MensSemiTwo" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemiThree"></label></strong>
+            <input style="background-color:#98fb98" asp-for="MensSemiThree" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="MensSemiFour"></label></strong>
+            <input style="background-color:#98fb98" asp-for="MensSemiFour" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemiOne"></label></strong>
+            <input style="background-color:#da2c43" asp-for="WomensSemiOne" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemiTwo"></label></strong>
+            <input style="background-color:#da2c43" asp-for="WomensSemiTwo" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemiThree"></label></strong>
+            <input style="background-color:#98fb98" asp-for="WomensSemiThree" disabled class="form-control" />
+        </section>
+        <section style="width:95%; margin:5px;">
+            <strong><label asp-for="WomensSemiFour"></label></strong>
+            <input style="background-color:#98fb98" asp-for="WomensSemiFour" disabled class="form-control" />
+        </section>
+    </div>
+</div>
