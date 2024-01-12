@@ -67,5 +67,9 @@ namespace STC_Picks.Models
 		[Required]
         [DisplayName("Women's Quarter 8")]
         public string female8 { get; set; }
-	}
+
+        [Required]
+        [DisplayName("Email")]
+        public string userEmail { get; set; }
+    }
 }

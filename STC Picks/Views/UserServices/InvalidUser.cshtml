@@ -22,6 +22,14 @@
                 <input asp-for="lastName" class="form-control" />
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </section>
+            <!-- Email input -->
+            <section style="width:95%; margin:5px;">
+                <strong><label asp-for="userEmail"></label></strong>
+                <input asp-for="userEmail" class="form-control" />
+                <span asp-validation-for="userEmail" class="text-danger"></span>
+            </section>
+            <section>
+            </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
                 <h2 style="color:#1775E1">Men's Draw</h2>
             </section>
@@ -118,7 +126,7 @@
                 <span asp-validation-for="female8" class="text-danger"></span>
             </section>
             <section>
-                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4 disabled">Submit</button>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
             </section>
         </div>
     </div>

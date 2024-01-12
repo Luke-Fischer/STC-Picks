@@ -42,9 +42,8 @@ namespace STC_Picks.Controllers
             }
             //Valid user and submission
             user.accessCode = randomAccessKey();
-            //Ensure no new user can create picks
-            //_db.Users.Add(user);
-            //_db.SaveChanges();
+            _db.Users.Add(user);
+            _db.SaveChanges();
             return RedirectToAction("Confirmation", user);
         }
         public IActionResult Confirmation(User user)
@@ -66,6 +65,11 @@ namespace STC_Picks.Controllers
         }
         public IActionResult EditLoginFailure(User user)
         {
+            if(user.accessCode == null)
+            {
+                ViewBag.ErrorMessage = "Please enter an access key";
+                return View(user);
+            }
             var userList = _db.Users.ToList();
             foreach(User keyUser in userList)
             {
@@ -108,12 +112,11 @@ namespace STC_Picks.Controllers
                 currentUser.female6 = user.female6;
                 currentUser.female7 = user.female7;
                 currentUser.female8 = user.female8;
-                //Ensure no updates can be made
-                /*
-                *_db.Users.Update(currentUser);
-                *_db.SaveChanges();
-                *TempData["success"] = "Updated Successfully";
-                */
+
+                _db.Users.Update(currentUser);
+                _db.SaveChanges();
+                TempData["success"] = "Updated Successfully";
+                
                 return RedirectToAction("EditPicks", currentUser);
             }
             else

@@ -12,11 +12,12 @@
         <div class="form-outline;">
             <label asp-for="accessCode"></label>
             <input asp-for="accessCode" class="form-control" />
+            <span asp-validation-for="accessCode" class="text-danger"></span>
         </div>
         <br />
         <!-- Register buttons -->
         <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-block mb-4 disabled">Sign in</button>
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
             <p>Forgot your access code? Email <a href="mailto:lukefischer959@gmail.com" target="_blank">lukefischer959@gmail.com</a> and he will send you it.</p>
         </div>
     </div>

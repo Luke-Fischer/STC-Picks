@@ -12,17 +12,26 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr;">
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="firstName"></label></strong>
-                <input asp-for="firstName" disabled class="form-control" />
+                <input asp-for="firstName" class="form-control" />
                 <span asp-validation-for="firstName" class="text-danger"></span>
             </section>
             <!-- last name input -->
             <section style="width:95%; margin:5px;">
                 <strong><label asp-for="lastName"></label></strong>
-                <input asp-for="lastName" disabled class="form-control" />
+                <input asp-for="lastName" class="form-control" />
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </section>
+            <!-- Email input -->
+            <section style="width:95%; margin:5px;">
+                <strong><label asp-for="userEmail"></label></strong>
+                <input asp-for="userEmail" class="form-control" />
+                <span asp-validation-for="userEmail" class="text-danger"></span>
+            </section>
+            <section>
+
+            </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
-                <a style="text-decoration:none;" href="https://www.wimbledon.com/en_GB/draws/gentlemens-singles" target="_blank"><h2 style="color:#1775E1">Men's Draw</h2></a>
+                <a style="text-decoration:none;" href="https://ausopen.com/draws#!mens-singles" target="_blank"><h2 style="color:#1775E1">Men's Draw</h2></a>
             </section>
             <section>
             </section>
@@ -31,197 +40,197 @@
             <!--Men's Q1-->
             <section class="disabled" style="width:95%; margin:5px;">
                 <label asp-for="male1"></label>
-                <select asp-for="male1" disabled class="selectpicker form-control">
+                <select asp-for="male1" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">C. ALCARAZ (1)</option>
-                    <option class="text-dark">J. CHARDY</option>
-                    <option class="text-dark">A. MULLER</option>
-                    <option class="text-dark">A. RINDERKNECH</option>
-                    <option class="text-dark">J. KUBLER</option>
-                    <option class="text-dark">U. HUMBERT</option>
-                    <option class="text-dark">M. CECCHINATO</option>
-                    <option class="text-dark">N. JARRY (25)</option>
-                    <option class="text-dark">A. ZVEREV (19)</option>
-                    <option class="text-dark">G. BROUWER</option>
-                    <option class="text-dark">M. HUESLER</option>
-                    <option class="text-dark">Y. WATANUKI</option>
-                    <option class="text-dark">M. BERRETTINI</option>
-                    <option class="text-dark">L. SONEGO</option>
-                    <option class="text-dark">K. COPPEJANS</option>
-                    <option class="text-dark">A. DE MINAUR (15)</option>
+                    <option class="text-dark">N. Djokovic [1]</option>
+                    <option class="text-dark">Q1 Qualifier 1</option>
+                    <option class="text-dark">A. Popyrin</option>
+                    <option class="text-dark">M. Polmans</option>
+                    <option class="text-dark">Y. Hanfmann</option>
+                    <option class="text-dark">G. Monfils</option>
+                    <option class="text-dark">A. Murray</option>
+                    <option class="text-dark">T. Etcheverry [30]</option>
+                    <option class="text-dark">A. Mannarino [20]</option>
+                    <option class="text-dark">S. Wawrinka</option>
+                    <option class="text-dark">A. Shevchenko</option>
+                    <option class="text-dark">J. Munar</option>
+                    <option class="text-dark">C. O'Connell</option>
+                    <option class="text-dark">C. Garin</option>
+                    <option class="text-dark">R. Bautista Agut</option>
+                    <option class="text-dark">B. Shelton [16]</option>
                 </select>
                 <span asp-validation-for="male1" class="text-danger"></span>
             </section>
             <!--Men's Q5-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male5"></label>
-                <select asp-for="male5" disabled class="form-control">
+                <select asp-for="male5" class="form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">J. SINNER (8)</option>
-                    <option class="text-dark">J. CERUNDOLO</option>
-                    <option class="text-dark">M. KECMANOVIC</option>
-                    <option class="text-dark">D. SCHWARTZMAN</option>
-                    <option class="text-dark">A. VUKIC</option>
-                    <option class="text-dark">D. ALTMAIER</option>
-                    <option class="text-dark">Q. HALYS</option>
-                    <option class="text-dark">D. EVANS (27)</option>
-                    <option class="text-dark">Y. NISHIOKA (24)</option>
-                    <option class="text-dark">D. GALAN</option>
-                    <option class="text-dark">D. KOEPFER</option>
-                    <option class="text-dark">O. OTTE</option>
-                    <option class="text-dark">M. YMER</option>
-                    <option class="text-dark">A. MOLCAN</option>
-                    <option class="text-dark">Y. HANFMANN</option>
-                    <option class="text-dark">T. FRITZ (9)</option>
+                    <option class="text-dark">H. Rune [8]</option>
+                    <option class="text-dark">Y. Nishioka</option>
+                    <option class="text-dark">L. Djere</option>
+                    <option class="text-dark">A. Cazaux</option>
+                    <option class="text-dark">A. Fils</option>
+                    <option class="text-dark">J. Vesely</option>
+                    <option class="text-dark">R. Safiullin</option>
+                    <option class="text-dark">T. Griekspoor [28]</option>
+                    <option class="text-dark">U. Humbert [21]</option>
+                    <option class="text-dark">Q5 Qualifier 1</option>
+                    <option class="text-dark">Z. Zhang</option>
+                    <option class="text-dark">F. Coria</option>
+                    <option class="text-dark">D. Shapovalov</option>
+                    <option class="text-dark">Q5 Qualifier 2</option>
+                    <option class="text-dark">Q5 Qualifier 3</option>
+                    <option class="text-dark">H. Hurkacz [9]</option>
                 </select>
                 <span asp-validation-for="male5" class="text-danger"></span>
             </section>
             <!--Men's Q2-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male2"></label>
-                <select asp-for="male2" disabled class="selectpicker form-control">
+                <select asp-for="male2" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">F. TIAFOE (10)</option>
-                    <option class="text-dark">Y. WU</option>
-                    <option class="text-dark">D. STRICKER</option>
-                    <option class="text-dark">A. POPYRIN</option>
-                    <option class="text-dark">I. IVASHKA</option>
-                    <option class="text-dark">F. CORIA</option>
-                    <option class="text-dark">S. SHIMABUKURO</option>
-                    <option class="text-dark">G. DIMITROV (21)</option>
-                    <option class="text-dark">A. DAVIDOVICH FOKINA (31)</option>
-                    <option class="text-dark">A. FILS</option>
-                    <option class="text-dark">Z. ZHANG</option>
-                    <option class="text-dark">B. VAN DE ZANDSCHULP</option>
-                    <option class="text-dark">M. ARNALDI</option>
-                    <option class="text-dark">R. CARBELLES BAENA</option>
-                    <option class="text-dark">G. LOFFHAGEN</option>
-                    <option class="text-dark">H. RUNE (6)</option>
+                    <option class="text-dark">T. Fritz [12]</option>
+                    <option class="text-dark">F. Diaz Acosta</option>
+                    <option class="text-dark">R. Carballes Baena</option>
+                    <option class="text-dark">B. Gojo</option>
+                    <option class="text-dark">F. Marozsan</option>
+                    <option class="text-dark">M. Cilic</option>
+                    <option class="text-dark">Q2 Qualifier 1</option>
+                    <option class="text-dark">F. Cerundolo [22]</option>
+                    <option class="text-dark">L. Musetti [25]</option>
+                    <option class="text-dark">B. Bonzi</option>
+                    <option class="text-dark">J. Duckworth</option>
+                    <option class="text-dark">L. Van Assche</option>
+                    <option class="text-dark">A. Vukic</option>
+                    <option class="text-dark">J. Thompson</option>
+                    <option class="text-dark">M. Berrettini</option>
+                    <option class="text-dark">S. Tsitsipas [7]</option>
                 </select>
                 <span asp-validation-for="male2" class="text-danger"></span>
             </section>
             <!--Men's Q6-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male6"></label>
-                <select asp-for="male6" disabled class="selectpicker form-control">
+                <select asp-for="male6" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">B. CORIC (13)</option>
-                    <option class="text-dark">G. PELLA</option>
-                    <option class="text-dark">B. BONZI</option>
-                    <option class="text-dark">H. MAYOT</option>
-                    <option class="text-dark">C. MOUTET</option>
-                    <option class="text-dark">R. GASQUET</option>
-                    <option class="text-dark">R. SAFIULLIN</option>
-                    <option class="text-dark">R. BAUTISTA AGUT (20)</option>
-                    <option class="text-dark">B. D. SHAPOVALOV (26)</option>
-                    <option class="text-dark">R. ALBOT</option>
-                    <option class="text-dark">L. HARRIS</option>
-                    <option class="text-dark">G. BARRERE</option>
-                    <option class="text-dark">L. BROADY</option>
-                    <option class="text-dark">C. LESTIENNE</option>
-                    <option class="text-dark">L. LOKOLI</option>
-                    <option class="text-dark">C. RUUD (4)</option>
+                    <option class="text-dark">G. Dimitrov [13]</option>
+                    <option class="text-dark">M. Fucsovics</option>
+                    <option class="text-dark">S. Ofner</option>
+                    <option class="text-dark">T. Kokkinakis</option>
+                    <option class="text-dark">M. Marterer</option>
+                    <option class="text-dark">N. Borges</option>
+                    <option class="text-dark">C. Lestienne</option>
+                    <option class="text-dark">A. Davidovich Fokina [23]</option>
+                    <option class="text-dark">F. Auger-Aliassime [27]</option>
+                    <option class="text-dark">D. Thiem</option>
+                    <option class="text-dark">A. Muller</option>
+                    <option class="text-dark">Q6 Qualifier 1</option>
+                    <option class="text-dark">P. Kypson</option>
+                    <option class="text-dark">E. Ruusuvuori</option>
+                    <option class="text-dark">Q6 Qualifier 2</option>
+                    <option class="text-dark">D. Medvedev [3]</option>
                 </select>
                 <span asp-validation-for="male6" class="text-danger"></span>
             </section>
             <!--Men's Q3-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male3"></label>
-                <select asp-for="male3" disabled class="selectpicker form-control">
+                <select asp-for="male3" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">D. MEDVEDEV (3)</option>
-                    <option class="text-dark">A. FERY</option>
-                    <option class="text-dark">A. MANNARINO</option>
-                    <option class="text-dark">A. SHEVCHENKO</option>
-                    <option class="text-dark">M. GIRON</option>
-                    <option class="text-dark">H. DELLIEN</option>
-                    <option class="text-dark">M. FUCSOVICS</option>
-                    <option class="text-dark">T. GRIEKSPOOR (28)</option>
-                    <option class="text-dark">F. CERUNDOLO (18)</option>
-                    <option class="text-dark">N. BORGES</option>
-                    <option class="text-dark">J. LEHECKA</option>
-                    <option class="text-dark">S. OFNER</option>
-                    <option class="text-dark">M. RAONIC</option>
-                    <option class="text-dark">D. NOVAK</option>
-                    <option class="text-dark">S. MOCHIZUKI</option>
-                    <option class="text-dark">T. PAUL (16)</option>
+                    <option class="text-dark">J. Sinner [4]</option>
+                    <option class="text-dark">B. van de Zandschulp</option>
+                    <option class="text-dark">Q3 Qualifier 1</option>
+                    <option class="text-dark">P. Cachin</option>
+                    <option class="text-dark">D. Galan</option>
+                    <option class="text-dark">J. Kubler</option>
+                    <option class="text-dark">J. Wolf</option>
+                    <option class="text-dark">S. Baez [26]</option>
+                    <option class="text-dark">T. Tiafoe [17]</option>
+                    <option class="text-dark">B. Coric</option>
+                    <option class="text-dark">T. Machac</option>
+                    <option class="text-dark">Q3 Qualifier 2</option>
+                    <option class="text-dark">A. Tabilo</option>
+                    <option class="text-dark">Q3 Qualifier 3</option>
+                    <option class="text-dark">D. Altmaier</option>
+                    <option class="text-dark">K. Khachanov [15]</option>
                 </select>
                 <span asp-validation-for="male3" class="text-danger"></span>
             </section>
             <!--Men's Q7-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male7"></label>
-                <select asp-for="male7" disabled class="selectpicker form-control">
+                <select asp-for="male7" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">A. RUBLEV (7)</option>
-                    <option class="text-dark">M. PURCELL</option>
-                    <option class="text-dark">L. VAN ASSCHE</option>
-                    <option class="text-dark">A. KARATSEV</option>
-                    <option class="text-dark">S. BAEZ</option>
-                    <option class="text-dark">T. BARRIOS VERA</option>
-                    <option class="text-dark">D. GOFFIN</option>
-                    <option class="text-dark">N. KYRGIOS (30)</option>
-                    <option class="text-dark">A. BUBLIK (23)</option>
-                    <option class="text-dark">M. MCDONALD</option>
-                    <option class="text-dark">J. WOLF</option>
-                    <option class="text-dark">E. COUACAUD</option>
-                    <option class="text-dark">M. MARTERER</option>
-                    <option class="text-dark">B. GOJO</option>
-                    <option class="text-dark">F. KRAJINOVIC</option>
-                    <option class="text-dark">F. AUGER-ALIASSIME (11)</option>
+                    <option class="text-dark">A. Zverev [6]</option>
+                    <option class="text-dark">D. Koepfer</option>
+                    <option class="text-dark">S. Kwon</option>
+                    <option class="text-dark">Q7 Qualifier 1</option>
+                    <option class="text-dark">J. McCabe</option>
+                    <option class="text-dark">A. Michelsen</option>
+                    <option class="text-dark">B. Zapata Miralles</option>
+                    <option class="text-dark">J. Lehecka [32]</option>
+                    <option class="text-dark">C. Norrie [19]</option>
+                    <option class="text-dark">J. Varillas</option>
+                    <option class="text-dark">D. Lajovic</option>
+                    <option class="text-dark">Q7 Qualifier 2</option>
+                    <option class="text-dark">M. Purcell</option>
+                    <option class="text-dark">Q7 Qualifier 3</option>
+                    <option class="text-dark">A. Ramos-Vinolas</option>
+                    <option class="text-dark">C. Ruud [11]</option>
                 </select>
                 <span asp-validation-for="male7" class="text-danger"></span>
             </section>
             <!--Men's Q4-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male4"></label>
-                <select asp-for="male4" disabled class="selectpicker form-control">
+                <select asp-for="male4" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">C. NORRIE (12)</option>
-                    <option class="text-dark">T. MACHAC</option>
-                    <option class="text-dark">C. EUBANKS</option>
-                    <option class="text-dark">T. MONTEIRO</option>
-                    <option class="text-dark">C. O'CONNELL</option>
-                    <option class="text-dark">H. MEDJEDOVIC</option>
-                    <option class="text-dark">J. VESELY</option>
-                    <option class="text-dark">S. KORDA (22)</option>
-                    <option class="text-dark">B. SHELTON (32)</option>
-                    <option class="text-dark">T. DANIEL</option>
-                    <option class="text-dark">M. CRESSY</option>
-                    <option class="text-dark">L. DJERE</option>
-                    <option class="text-dark">R. PENISTON</option>
-                    <option class="text-dark">A. MURRAY</option>
-                    <option class="text-dark">D. THIEM</option>
-                    <option class="text-dark">S. TSITSIPAS (5)</option>
+                    <option class="text-dark">A. de Minaur [10]</option>
+                    <option class="text-dark">M. Raonic</option>
+                    <option class="text-dark">M. Arnaldi</option>
+                    <option class="text-dark">A. Walton</option>
+                    <option class="text-dark">P. Kotov</option>
+                    <option class="text-dark">A. Rinderknech</option>
+                    <option class="text-dark">Q4 Qualifer 1</option>
+                    <option class="text-dark">N. Jarry [18]</option>
+                    <option class="text-dark">S. Korda [29]</option>
+                    <option class="text-dark">Q4 Qualifier 2</option>
+                    <option class="text-dark">Q. Halys</option>
+                    <option class="text-dark">Q4 Qualifier 3</option>
+                    <option class="text-dark">C. Eubanks</option>
+                    <option class="text-dark">T. Daniel</option>
+                    <option class="text-dark">T. Seyboth Wild</option>
+                    <option class="text-dark">A. Rublev [5]</option>
                 </select>
                 <span asp-validation-for="male4" class="text-danger"></span>
             </section>
             <!--Men's Q8-->
             <section style="width:95%; margin:5px;">
                 <label asp-for="male8"></label>
-                <select asp-for="male8" disabled class="selectpicker form-control">
+                <select asp-for="male8" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">L. MUSETTI (14)</option>
-                    <option class="text-dark">J. VARILLAS</option>
-                    <option class="text-dark">J. ISNER</option>
-                    <option class="text-dark">J. MUNAR</option>
-                    <option class="text-dark">J. CHOINSKI</option>
-                    <option class="text-dark">D. LAJOVIC</option>
-                    <option class="text-dark">A. RAMOS-VINOLAS</option>
-                    <option class="text-dark">H. HURKACZ (17)</option>
-                    <option class="text-dark">T. ETCHEVERRY (29)</option>
-                    <option class="text-dark">B. ZAPATA MIRALLES</option>
-                    <option class="text-dark">E. RUUSUVUORI</option>
-                    <option class="text-dark">S. WAWRINKA</option>
-                    <option class="text-dark">J. THOMPSON</option>
-                    <option class="text-dark">B. NAKASHIMA</option>
-                    <option class="text-dark">P. CACHIN</option>
-                    <option class="text-dark">N. DJOKOVIC (2)</option>
+                    <option class="text-dark">T. Paul [14]</option>
+                    <option class="text-dark">G. Barrere</option>
+                    <option class="text-dark">M. Giron</option>
+                    <option class="text-dark">J. Draper</option>
+                    <option class="text-dark">M. Kecmanovic</option>
+                    <option class="text-dark">Y. Watanuki</option>
+                    <option class="text-dark">R. Hijikata</option>
+                    <option class="text-dark">J. Struff [24]</option>
+                    <option class="text-dark">A. Bublik [31]</option>
+                    <option class="text-dark">Q8 Qualifier 1</option>
+                    <option class="text-dark">M. McDonald</option>
+                    <option class="text-dark">J. Shang</option>
+                    <option class="text-dark">D. Evans</option>
+                    <option class="text-dark">L. Sonego</option>
+                    <option class="text-dark">R. Gasquet</option>
+                    <option class="text-dark">C. Alcaraz [2]</option>
                 </select>
                 <span asp-validation-for="male8" class="text-danger"></span>
             </section>
             <section style="width:95%; margin:25px 15px 15px 4px;">
-                <a style="text-decoration:none;" href="https://www.wimbledon.com/en_GB/draws/ladies-singles" target="_blank"><h2 style="color:#DA2C43">Women's Draw</h2></a>
+                <a style="text-decoration:none;" href="https://ausopen.com/draws#!womens-singles" target="_blank"><h2 style="color:#DA2C43">Women's Draw</h2></a>
             </section>
             <section>
             </section>
@@ -229,24 +238,24 @@
             <!-- Women's Q1' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female1"></label>
-                <select asp-for="female1" disabled class="selectpicker form-control">
+                <select asp-for="female1" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">I. SWIATEK (1)</option>
-                    <option class="text-dark">L. ZHU</option>
-                    <option class="text-dark">M. TREVISAN</option>
-                    <option class="text-dark">S. SORRIBES TORMO</option>
-                    <option class="text-dark">D. PARRY</option>
-                    <option class="text-dark">H. DART</option>
-                    <option class="text-dark">L. FRUHVIRTOVA</option>
-                    <option class="text-dark">P. MARTIC (30)</option>
-                    <option class="text-dark">M. LINETTE (23)</option>
-                    <option class="text-dark">J. TEICHMANN</option>
-                    <option class="text-dark">B. STRYCOVA</option>
-                    <option class="text-dark">M. ZANEVSKA</option>
-                    <option class="text-dark">D. COLLINS</option>
-                    <option class="text-dark">J. GRABHER</option>
-                    <option class="text-dark">K. SWAN</option>
-                    <option class="text-dark">B. BENCIC (14)</option>
+                    <option class="text-dark">I. Swiatek [1]</option>
+                    <option class="text-dark">S. Kenin</option>
+                    <option class="text-dark">D. Collins</option>
+                    <option class="text-dark">A. Kerber</option>
+                    <option class="text-dark">Q1 Qualifier 1</option>
+                    <option class="text-dark">M. Kessler</option>
+                    <option class="text-dark">L. Noskova</option>
+                    <option class="text-dark">M. Bouzkova [31]</option>
+                    <option class="text-dark">E. Svitolina [19]</option>
+                    <option class="text-dark">T. Preston</option>
+                    <option class="text-dark">K. Day</option>
+                    <option class="text-dark">V. Tomova</option>
+                    <option class="text-dark">J. Cristian</option>
+                    <option class="text-dark">K. Siniakova</option>
+                    <option class="text-dark">V. Golubic</option>
+                    <option class="text-dark">V. Kudermetova [15]</option>
                 </select>
                 <span asp-validation-for="female1" class="text-danger"></span>
 
@@ -254,173 +263,173 @@
             <!-- Women's Q5' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female5"></label>
-                <select asp-for="female5" disabled class="selectpicker form-control">
+                <select asp-for="female5" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">O. JABEUR (6)</option>
-                    <option class="text-dark">M. FRECH</option>
-                    <option class="text-dark">Y. BONAVENTURE</option>
-                    <option class="text-dark">Z. BAI</option>
-                    <option class="text-dark">A. BONDAR</option>
-                    <option class="text-dark">B. ANDREESCU</option>
-                    <option class="text-dark">J. BOUZAS MANEIRO</option>
-                    <option class="text-dark">A. KALININA (26)</option>
-                    <option class="text-dark">KA. PLISKOVA (18)</option>
-                    <option class="text-dark">N. STEVANOVIC</option>
-                    <option class="text-dark">C. ZHAO</option>
-                    <option class="text-dark">T. KORPATSCH</option>
-                    <option class="text-dark">A. SASNOVICH</option>
-                    <option class="text-dark">N. PARRIZAS DIAZ</option>
-                    <option class="text-dark">J. PAOLINI</option>
-                    <option class="text-dark">P. KVITOVA (9)</option>
+                    <option class="text-dark">M. Sakkari [8]</option>
+                    <option class="text-dark">H. Hibino</option>
+                    <option class="text-dark">Z. Bai</option>
+                    <option class="text-dark">E. Avanesyan</option>
+                    <option class="text-dark">M. Kostyuk</option>
+                    <option class="text-dark">C. Liu</option>
+                    <option class="text-dark">M. Sherif</option>
+                    <option class="text-dark">E. Mertens [25]</option>
+                    <option class="text-dark">M. Linette [20]</option>
+                    <option class="text-dark">C. Wozniacki</option>
+                    <option class="text-dark">A. Cornet</option>
+                    <option class="text-dark">Q5 Qualifier 1</option>
+                    <option class="text-dark">S. Sorribes Tormo</option>
+                    <option class="text-dark">Q5 Qualifier 2</option>
+                    <option class="text-dark">L. Fruhvirtova</option>
+                    <option class="text-dark">B. Haddad Maia [10]</option>
                 </select>
                 <span asp-validation-for="female5" class="text-danger"></span>
             </section>
             <!-- Women's Q2' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female2"></label>
-                <select asp-for="female2" disabled class="selectpicker form-control">
+                <select asp-for="female2" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">D. KASATKINA (11)</option>
-                    <option class="text-dark">C. DOLEHIDE</option>
-                    <option class="text-dark">J. BURRAGE</option>
-                    <option class="text-dark">C. MCNALLY</option>
-                    <option class="text-dark">N. PODOROSKA</option>
-                    <option class="text-dark">T. MARTINCOVA</option>
-                    <option class="text-dark">Y. YUAN</option>
-                    <option class="text-dark">V. AZARENKA (19)</option>
-                    <option class="text-dark">E. MERTENS (28)</option>
-                    <option class="text-dark">V. HRUNCAKOVA</option>
-                    <option class="text-dark">V. WILLIAMS</option>
-                    <option class="text-dark">E. SVITOLINA</option>
-                    <option class="text-dark">S. HUNTER</option>
-                    <option class="text-dark">X. WANG</option>
-                    <option class="text-dark">S. KENIN</option>
-                    <option class="text-dark">C. GAUFF (7)</option>
+                    <option class="text-dark">J. Ostapenko [11]</option>
+                    <option class="text-dark">J. Birrell</option>
+                    <option class="text-dark">P. Martic</option>
+                    <option class="text-dark">A. Tomljanovic</option>
+                    <option class="text-dark">G. Minnen</option>
+                    <option class="text-dark">C. Tauson</option>
+                    <option class="text-dark">C. Giorgi</option>
+                    <option class="text-dark">V. Azarenka [18]</option>
+                    <option class="text-dark">E. Navarro [27]</option>
+                    <option class="text-dark">X. Wang</option>
+                    <option class="text-dark">E. Cocciaretto</option>
+                    <option class="text-dark">Q2 Qualifier 1</option>
+                    <option class="text-dark">Y. Wickmayer</option>
+                    <option class="text-dark">V. Gracheva</option>
+                    <option class="text-dark">Q2 Qualifier 2</option>
+                    <option class="text-dark">M. Vondrousova [7]</option>
                 </select>
                 <span asp-validation-for="female2" class="text-danger"></span>
             </section>
             <!-- Women's Q6' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female6"></label>
-                <select asp-for="female6" disabled class="selectpicker form-control">
+                <select asp-for="female6" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">B. HADDAD MAIA (13)</option>
-                    <option class="text-dark">Y. PUTINTSEVA</option>
-                    <option class="text-dark">J. CRISTIAN</option>
-                    <option class="text-dark">L. BRONZETTI</option>
-                    <option class="text-dark">S. CIRSTEA</option>
-                    <option class="text-dark">T. MARIA</option>
-                    <option class="text-dark">G. MINNEN</option>
-                    <option class="text-dark">J. OSTAPENKO (17)</option>
-                    <option class="text-dark">B. PERA (27)</option>
-                    <option class="text-dark">V. TOMOVA</option>
-                    <option class="text-dark">K. BOULTER</option>
-                    <option class="text-dark">D. SAVILLE</option>
-                    <option class="text-dark">N. HIBINO</option>
-                    <option class="text-dark">A. CORNET</option>
-                    <option class="text-dark">S. ROGERS</option>
-                    <option class="text-dark">E. RYBAKINA (3)</option>
+                    <option class="text-dark">C. Garcia [16]</option>
+                    <option class="text-dark">N. Osaka</option>
+                    <option class="text-dark">M. Frech</option>
+                    <option class="text-dark">D. Saville</option>
+                    <option class="text-dark">Y. Putintseva</option>
+                    <option class="text-dark">Q6 Qualifier 1</option>
+                    <option class="text-dark">K. Juvan</option>
+                    <option class="text-dark">A. Potapova [23]</option>
+                    <option class="text-dark">L. Fernandez [32]</option>
+                    <option class="text-dark">Q6 Qualifier 2</option>
+                    <option class="text-dark">A. Parks</option>
+                    <option class="text-dark">Q6 Qualifier 3</option>
+                    <option class="text-dark">C. Dolehide</option>
+                    <option class="text-dark">Q5 Qualifier 4</option>
+                    <option class="text-dark">A. Schmiedlova</option>
+                    <option class="text-dark">C. Gauff [4]</option>
                 </select>
                 <span asp-validation-for="female6" class="text-danger"></span>
             </section>
             <!-- Women's Q3' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female3"></label>
-                <select asp-for="female3" disabled class="selectpicker form-control">
+                <select asp-for="female3" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">J. PEGULA (4)</option>
-                    <option class="text-dark">L. DAVIS</option>
-                    <option class="text-dark">C. BUCSA</option>
-                    <option class="text-dark">K. RAKHIMOVA</option>
-                    <option class="text-dark">C. OSORIO</option>
-                    <option class="text-dark">E. COCCIARETTO</option>
-                    <option class="text-dark">R. MASAROVA</option>
-                    <option class="text-dark">M. SHERIF (31)</option>
-                    <option class="text-dark">Q. ZHENG (24)</option>
-                    <option class="text-dark">K. SINIAKOVA</option>
-                    <option class="text-dark">L. TSURENKO</option>
-                    <option class="text-dark">C. LIU</option>
-                    <option class="text-dark">A. PARKS</option>
-                    <option class="text-dark">A. FRIEDSAM</option>
-                    <option class="text-dark">A. BOGDAN</option>
-                    <option class="text-dark">L. SAMSONOVA (15)</option>
+                    <option class="text-dark">E. Rybakina [3]</option>
+                    <option class="text-dark">K. Pliskova</option>
+                    <option class="text-dark">C. Bucsa</option>
+                    <option class="text-dark">A. Blinkova</option>
+                    <option class="text-dark">T. Maria</option>
+                    <option class="text-dark">C. Osorio</option>
+                    <option class="text-dark">D. Shnaider</option>
+                    <option class="text-dark">J. Paolini [26]</option>
+                    <option class="text-dark">A. Kalinina [24]</option>
+                    <option class="text-dark">A. Rus</option>
+                    <option class="text-dark">A. Kalinskaya</option>
+                    <option class="text-dark">Q3 Qualifier 1</option>
+                    <option class="text-dark">S. Stephens</option>
+                    <option class="text-dark">O. Gadecki</option>
+                    <option class="text-dark">P. Stearns</option>
+                    <option class="text-dark">D. Kasatkina [14]</option>
                 </select>
                 <span asp-validation-for="female3" class="text-danger"></span>
             </section>
             <!-- Women's Q7' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female7"></label>
-                <select asp-for="female7" disabled class="selectpicker form-control">
+                <select asp-for="female7" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">M. SAKKARI (8)</option>
-                    <option class="text-dark">M. KOSTYUK</option>
-                    <option class="text-dark">A. RISKE-AMRITRAJ</option>
-                    <option class="text-dark">P. BADOSA</option>
-                    <option class="text-dark">V. GOLUBIC</option>
-                    <option class="text-dark">A. SCHMIEDLOVA</option>
-                    <option class="text-dark">S. KARTAL</option>
-                    <option class="text-dark">M. KEYS (25)</option>
-                    <option class="text-dark">A. POTAPOVA (22)</option>
-                    <option class="text-dark">C. NAEF</option>
-                    <option class="text-dark">K. JUVAN</option>
-                    <option class="text-dark">M. BETOVA</option>
-                    <option class="text-dark">M. ANDREEVA</option>
-                    <option class="text-dark">X. WANG</option>
-                    <option class="text-dark">H. WATSON</option>
-                    <option class="text-dark">B. KREJCIKOVA (10)</option>
+                    <option class="text-dark">O. Jabeur [6]</option>
+                    <option class="text-dark">Q7 Qualifier 1</option>
+                    <option class="text-dark">M. Andreeva</option>
+                    <option class="text-dark">B. Pera</option>
+                    <option class="text-dark">K. Rakhimova</option>
+                    <option class="text-dark">E. Bektas</option>
+                    <option class="text-dark">D. Parry</option>
+                    <option class="text-dark">X. Wang [30]</option>
+                    <option class="text-dark">E. Alexandrova [17]</option>
+                    <option class="text-dark">L. Siegemund</option>
+                    <option class="text-dark">Q7 Qualifier 2</option>
+                    <option class="text-dark">S. Errani</option>
+                    <option class="text-dark">T. Korpatsch</option>
+                    <option class="text-dark">J. Burrage</option>
+                    <option class="text-dark">M. Hontama</option>
+                    <option class="text-dark">B. Krejcikova [9]</option>
                 </select>
                 <span asp-validation-for="female7" class="text-danger"></span>
             </section>
             <!-- Women's Q4' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female4"></label>
-                <select asp-for="female4" disabled class="selectpicker form-control">
+                <select asp-for="female4" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">V. KUDERMETOVA (12)</option>
-                    <option class="text-dark">K. KANEPI</option>
-                    <option class="text-dark">M. VONDROUSOVA</option>
-                    <option class="text-dark">P. STEARNS</option>
-                    <option class="text-dark">S. STEPHENS</option>
-                    <option class="text-dark">R. PETERSON</option>
-                    <option class="text-dark">S. ZHANG</option>
-                    <option class="text-dark">D. VEKIC (20)</option>
-                    <option class="text-dark">M. BOUZKOVA (32)</option>
-                    <option class="text-dark">S. WALTERT</option>
-                    <option class="text-dark">A. KONTAVEIT</option>
-                    <option class="text-dark">L. STEFANINI</option>
-                    <option class="text-dark">K. BAINDL</option>
-                    <option class="text-dark">L. FERNANDEZ</option>
-                    <option class="text-dark">K. VOLYNETS</option>
-                    <option class="text-dark">C. GARCIA (5)</option>
+                    <option class="text-dark">Q. Zheng [12]</option>
+                    <option class="text-dark">A. Krueger</option>
+                    <option class="text-dark">K. Boulter</option>
+                    <option class="text-dark">Y. Yuan</option>
+                    <option class="text-dark">E. Raducanu</option>
+                    <option class="text-dark">S. Rogers</option>
+                    <option class="text-dark">Y. Wang</option>
+                    <option class="text-dark">S. Cirstea [22]</option>
+                    <option class="text-dark">L. Zhu [29]</option>
+                    <option class="text-dark">O. Dodin</option>
+                    <option class="text-dark">Q4 Qualifier 1</option>
+                    <option class="text-dark">M. Trevisan</option>
+                    <option class="text-dark">A. Krunic</option>
+                    <option class="text-dark">C. Burel</option>
+                    <option class="text-dark">Q4 Qualifier 2</option>
+                    <option class="text-dark">J. Pegula [5]</option>
                 </select>
                 <span asp-validation-for="female4" class="text-danger"></span>
             </section>
             <!-- Women's Q8' -->
             <section style="width:95%; margin:5px;">
                 <label asp-for="female8"></label>
-                <select asp-for="female8" disabled class="selectpicker form-control">
+                <select asp-for="female8" class="selectpicker form-control">
                     <option class="text-dark"></option>
-                    <option class="text-dark">K. MUCHOVA (16)</option>
-                    <option class="text-dark">J. NIEMEIER</option>
-                    <option class="text-dark">L. NOSKOVA</option>
-                    <option class="text-dark">D. GALFI</option>
-                    <option class="text-dark">M. BRENGLE</option>
-                    <option class="text-dark">S. ERRANI</option>
-                    <option class="text-dark">E. NAVARRO</option>
-                    <option class="text-dark">E. ALEXANDROVA (21)</option>
-                    <option class="text-dark">I. BEGU (29)</option>
-                    <option class="text-dark">R. MARINO</option>
-                    <option class="text-dark">Y. WICKMAYER</option>
-                    <option class="text-dark">A. BLINKOVA</option>
-                    <option class="text-dark">V. GRACHEVA</option>
-                    <option class="text-dark">C. GIORGI</option>
-                    <option class="text-dark">P. UDVARDY</option>
-                    <option class="text-dark">A. SABALENKA (2)</option>
+                    <option class="text-dark">L. Samsonova [13]</option>
+                    <option class="text-dark">A. Anisimova</option>
+                    <option class="text-dark">N. Podoroska</option>
+                    <option class="text-dark">T. Zidansek</option>
+                    <option class="text-dark">T. Townsend</option>
+                    <option class="text-dark">P. Badosa</option>
+                    <option class="text-dark">A. Pavlyuchenkova</option>
+                    <option class="text-dark">D. Vekic [21]</option>
+                    <option class="text-dark">L. Tsurenko [28]</option>
+                    <option class="text-dark">L. Bronzetti</option>
+                    <option class="text-dark">R. Masarova</option>
+                    <option class="text-dark">A. Sasnovich</option>
+                    <option class="text-dark">A. Bogdan</option>
+                    <option class="text-dark">Q8 Qualifier 1</option>
+                    <option class="text-dark">Q8 Qualifier 2</option>
+                    <option class="text-dark">A. Sabalenka [2]</option>
                 </select>
                 <span asp-validation-for="female8" class="text-danger"></span>
             </section>
             <section>
-                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4 disabled">Submit</button>
+                <button style="width:65%; margin:15px 15px 15px 4.5px;" type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
             </section>
         </div>
     </div>

@@ -12,5 +12,9 @@ namespace STC_Picks.Controllers
         {
             return View();
         }
+        public IActionResult USOpen2023()
+        {
+            return View();
+        }
     }
 }
