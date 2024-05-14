@@ -16,5 +16,9 @@ namespace STC_Picks.Controllers
         {
             return View();
         }
+        public IActionResult AustralianOpen2024()
+        {
+            return View();
+        }
     }
 }
