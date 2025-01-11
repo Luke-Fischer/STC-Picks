@@ -6,7 +6,7 @@
 
 <br />
 <table class="table" style="background-color:white; color:white">
-    <thead style="background-color:#D06B28;">
+    <thead style="background-color:#3C638E;">
         <tr style="color:white;">
             <th scope="col">#</th>
             <th scope="col">Name</th>
@@ -25,9 +25,9 @@
                     displayPlace = place;
                 }
                 <tr>
-                    <th style="color:#D06B28;" scope="row">@displayPlace</th>
-                    <td><strong><a style="text-decoration:none; color:#D06B28;" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@dispName</a></strong></td>
-                    <td style="color:#D06B28;">@obj.score</td>
+                    <th style="color:#3C638E;" scope="row">@displayPlace</th>
+                    <td><strong><a style="text-decoration:none; color:gray; pointer-events:none; cursor:default;" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@dispName</a></strong></td>
+                    <td style="color:#3C638E;">@obj.score</td>
                 </tr>
                 currentScore = obj.score;
                 place++;

@@ -20,5 +20,13 @@ namespace STC_Picks.Controllers
         {
             return View();
         }
+        public IActionResult FrenchOpen2024()
+        {
+            return View();
+        }
+        public IActionResult Wimbledon2024()
+        {
+            return View();
+        }
     }
 }
