@@ -5,6 +5,7 @@
 @model IEnumerable<User>
 
 <br />
+<h2>Final Results</h2>
 <table class="table" style="background-color:white; color:white">
     <thead style="background-color:#3C638E;">
         <tr style="color:white;">
@@ -26,7 +27,7 @@
                 }
                 <tr>
                     <th style="color:#3C638E;" scope="row">@displayPlace</th>
-                    <td><strong><a style="text-decoration:none; color:gray; pointer-events:none; cursor:default;" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@dispName</a></strong></td>
+                    <td><strong><a style="text-decoration:none; color:#3C638E;" asp-controller="Leaderboard" asp-action="ViewPicks" asp-route-id="@obj.fullName">@dispName</a></strong></td>
                     <td style="color:#3C638E;">@obj.score</td>
                 </tr>
                 currentScore = obj.score;

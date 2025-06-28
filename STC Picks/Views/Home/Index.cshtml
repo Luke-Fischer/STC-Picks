@@ -2,20 +2,76 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-3" style="color:#3C638E"><strong>Australian Open 2025 Pick'Ems</strong></h1>
-    <h2>sponsored by Junction 56 Distillery</h2> 
-    <br />
-    <br />
-    <a href="https://ausopen.com/" target="_blank"><img src="~/Logo-Australian-Open.png" alt="Australian Open Logo" width="25%" height="25%"></a>
-    <br /><br /><br />
-    <a style="width:40%;" class="btn btn-lg btn-primary" asp-area="" asp-controller="UserServices" asp-action="Index">Pick'Em</a>
-    <br /><br />
-    <a style="width:40%;" class="btn btn-lg btn-success" asp-area="" asp-controller="UserServices" asp-action="EditLogin">Manage Picks</a>
-    <br /><br />
-    <a style="width:40%;" class="btn btn-lg btn-danger" asp-area="" asp-controller="Leaderboard" asp-action="Index">Leaderboard</a>
-    <br /><br />
-    <a style="width:40%;" class="btn btn-lg btn-warning" asp-area="" asp-controller="Archive" asp-action="Index">Archive</a>
-    <br /><br />
-    <h5>Email any issues to <a href="mailto:lukefischer959@gmail.com" target="_blank">lukefischer959@gmail.com</a></h5>
+<style>
+    .homepage-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .homepage-title {
+        color: #2E5537; /* RG green */
+        font-weight: bold;
+    }
+
+    .homepage-subtitle {
+        color: #D1662F; /* Clay orange */
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+
+    .homepage-logo {
+        width: 200px;
+        height: auto;
+        margin: 20px 0;
+        transition: transform 0.3s ease;
+    }
+
+        .homepage-logo:hover {
+            transform: scale(1.05);
+        }
+
+    .homepage-btn {
+        width: 70%;
+        max-width: 300px;
+        margin: 10px auto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .email-note {
+        margin-top: 40px;
+        font-size: 0.95rem;
+    }
+
+        .email-note a {
+            color: #2E5537;
+            text-decoration: underline;
+        }
+
+            .email-note a:hover {
+                color: #D1662F;
+            }
+</style>
+
+<div class="homepage-container">
+    <h1 class="display-4 homepage-title">Wimbledon 2025 Pick'Em</h1>
+    <h2 class="homepage-subtitle">Sponsored by Heaton Health</h2>
+
+    <a href="https://www.wimbledon.com/index.html" target="_blank">
+        <img src="~/Wimbledon.svg.png" alt="Wimbledon Logo" class="homepage-logo" />
+    </a>
+
+    <div>
+        <a class="btn btn-lg btn-primary homepage-btn" asp-area="" asp-controller="UserServices" asp-action="Index">Pick'Em</a>
+        <a class="btn btn-lg btn-success homepage-btn" asp-area="" asp-controller="UserServices" asp-action="EditLogin">Manage Picks</a>
+        <a class="btn btn-lg btn-danger homepage-btn" asp-area="" asp-controller="Leaderboard" asp-action="Index">Leaderboard</a>
+        <a class="btn btn-lg btn-warning homepage-btn" asp-area="" asp-controller="Archive" asp-action="Index">Archive</a>
+    </div>
+
+    <div class="email-note">
+        <h5>Email any issues to <a href="mailto:lukefischer959@gmail.com" target="_blank">lukefischer959@gmail.com</a></h5>
+    </div>
 </div>

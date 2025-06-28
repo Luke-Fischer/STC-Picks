@@ -1,48 +1,111 @@
 ﻿@{
     ViewData["Title"] = "Archive";
 }
- 
-<h3 class="text-center"><strong>Past Results</strong></h3>
-<br />
 
-<table class="table">
+<style>
+    .archive-heading {
+        color: #2E5537;
+        font-weight: bold;
+        margin: 30px 0 20px;
+    }
+
+    .archive-table {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .archive-table thead {
+        background-color: #D1662F;
+        color: white;
+        font-weight: bold;
+    }
+
+    .archive-table th,
+    .archive-table td {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .archive-table a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .archive-table a:hover {
+        text-decoration: underline;
+    }
+
+    .archive-winner {
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: #FFD700;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .row-french { background-color: #D1662F; }
+    .row-aus { background-color: #1E8FD5; }
+    .row-us { background-color: #3C638E; }
+    .row-wimb { background-color: #007b22; }
+
+    .event-title {
+        color: white;
+        font-weight: 600;
+    }
+</style>
+
+<h3 class="text-center archive-heading">Past Results</h3>
+
+<table class="table archive-table">
     <thead>
         <tr>
-            <th scope="col">Event</th>
-            <th scope="col">Winner</th>
-            <th scope="col">Sponsor</th>
+            <th>Event</th>
+            <th>Winner</th>
+            <th>Sponsor</th>
         </tr>
     </thead>
     <tbody>
-        <tr style="background-color:#3C638E">
-            <th style="text-decoration:none; color:white;" asp-controller="Archive" scope="row" style="color:white;">US Open 2024</th>
-            <td style="color:white;">Luke Fischer</td>
-            <td> <a style="text-decoration:none; color:white" href="https://heatonhealth.com/" target="_blank"><strong>Heaton Health</strong></a></td>
+        <tr class="row-french">
+            <th class="event-title">French Open 2025</th>
+            <td><span class="archive-winner">Josh Heaton</span></td>
+            <td><a href="https://rheothompson.com/" target="_blank">Rheo Thompson</a></td>
         </tr>
-        <tr style="background-color:#007b22">
-            <th> <a style="text-decoration:none; color:white;" asp-controller="Archive" asp-action="Wimbledon2024" scope="row" style="color:white;">Wimbledon 2024</a></th>
-            <td style="color:white;">Charlotte Beaumont</td>
-            <td> <a style="text-decoration:none; color:white" href="https://heatonhealth.com/" target="_blank"><strong>Heaton Health</strong></a></td>
+        <tr class="row-aus">
+            <th class="event-title">Australian Open 2025</th>
+            <td><span class="archive-winner">Stephen Fischer</span></td>
+            <td><a href="https://www.junction56.ca/" target="_blank">Junction 56 Distillery</a></td>
         </tr>
-        <tr style="background-color:#D06B28">
-            <th> <a style="text-decoration:none; color:white;" asp-controller="Archive" asp-action="FrenchOpen2024" scope="row" style="color:white;">French Open 2024</a></th>
-            <td style="color:white;">Steve Scott</td>
-            <td> <a style="text-decoration:none; color:white" href="https://www.junction56.ca/" target="_blank"><strong>Junction 56 Distillery</strong></a></td>
+        <tr class="row-us">
+            <th class="event-title">US Open 2024</th>
+            <td><span class="archive-winner">Luke Fischer</span></td>
+            <td><a href="https://heatonhealth.com/" target="_blank">Heaton Health</a></td>
         </tr>
-        <tr style="background-color:#1E8FD5">
-            <th> <a style="text-decoration:none; color:white;" asp-controller="Archive" asp-action="AustralianOpen2024" scope="row" style="color:white;">Australian Open 2024</a></th>
-            <td style="color:white;">Murray Schiedel</td>
-            <td> <a style="text-decoration:none; color:white" href="https://heatonhealth.com/" target="_blank"><strong>Heaton Health</strong></a></td>
+        <tr class="row-wimb">
+            <th><a asp-controller="Archive" asp-action="Wimbledon2024">Wimbledon 2024</a></th>
+            <td><span class="archive-winner">Charlotte Beaumont</span></td>
+            <td><a href="https://heatonhealth.com/" target="_blank">Heaton Health</a></td>
         </tr>
-        <tr style="background-color:#3C638E">
-            <th> <a style="text-decoration:none; color:white;" asp-controller="Archive" asp-action="USOpen2023" scope="row" style="color:white;">US Open 2023</a></th>
-            <td style="color:white;">John Noble</td>
-            <td> <a style="text-decoration:none; color:white" href="https://www.junction56.ca/" target="_blank"><strong>Junction 56 Distillery</strong></a></td>
+        <tr class="row-french">
+            <th><a asp-controller="Archive" asp-action="FrenchOpen2024">French Open 2024</a></th>
+            <td><span class="archive-winner">Steve Scott</span></td>
+            <td><a href="https://www.junction56.ca/" target="_blank">Junction 56 Distillery</a></td>
         </tr>
-        <tr style="background-color:#007b22">
-            <th> <a style="text-decoration:none; color:white;" asp-controller="Archive" asp-action="Wimbledon2023" scope="row" style="color:white;">Wimbledon 2023</a></th>
-            <td style="color:white;">Will Heaton</td>
-            <td> <a style="text-decoration:none; color:white" href="https://heatonhealth.com/" target="_blank"><strong>Heaton Health</strong></a></td>
+        <tr class="row-aus">
+            <th><a asp-controller="Archive" asp-action="AustralianOpen2024">Australian Open 2024</a></th>
+            <td><span class="archive-winner">Murray Schiedel</span></td>
+            <td><a href="https://heatonhealth.com/" target="_blank">Heaton Health</a></td>
+        </tr>
+        <tr class="row-us">
+            <th><a asp-controller="Archive" asp-action="USOpen2023">US Open 2023</a></th>
+            <td><span class="archive-winner">John Noble</span></td>
+            <td><a href="https://www.junction56.ca/" target="_blank">Junction 56 Distillery</a></td>
+        </tr>
+        <tr class="row-wimb">
+            <th><a asp-controller="Archive" asp-action="Wimbledon2023">Wimbledon 2023</a></th>
+            <td><span class="archive-winner">Will Heaton</span></td>
+            <td><a href="https://heatonhealth.com/" target="_blank">Heaton Health</a></td>
         </tr>
     </tbody>
 </table>
