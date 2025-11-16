@@ -11,12 +11,12 @@
     }
 
     .homepage-title {
-        color: #2E5537; /* RG green */
+        color: #3C638E; 
         font-weight: bold;
     }
 
     .homepage-subtitle {
-        color: #D1662F; /* Clay orange */
+        color: #B22234;
         font-style: italic;
         margin-bottom: 30px;
     }
@@ -47,26 +47,26 @@
     }
 
         .email-note a {
-            color: #2E5537;
+            color: #3C638E;
             text-decoration: underline;
         }
 
             .email-note a:hover {
-                color: #D1662F;
+                color: #3C638E;
             }
 </style>
 
 <div class="homepage-container">
-    <h1 class="display-4 homepage-title">Wimbledon 2025 Pick'Em</h1>
-    <h2 class="homepage-subtitle">Sponsored by Heaton Health</h2>
+    <h1 class="display-4 homepage-title">US Open 2025 Pick'Em</h1>
+    <h2 class="homepage-subtitle">Sponsored by Bradshaws</h2>
 
-    <a href="https://www.wimbledon.com/index.html" target="_blank">
-        <img src="~/Wimbledon.svg.png" alt="Wimbledon Logo" class="homepage-logo" />
+    <a href="https://www.usopen.org/index.html" target="_blank">
+        <img src="~/US_Open_Logo.png" alt="US Open Logo" class="homepage-logo" />
     </a>
 
     <div>
-        <a class="btn btn-lg btn-primary homepage-btn" asp-area="" asp-controller="UserServices" asp-action="Index">Pick'Em</a>
-        <a class="btn btn-lg btn-success homepage-btn" asp-area="" asp-controller="UserServices" asp-action="EditLogin">Manage Picks</a>
+        <a class="btn btn-lg btn-primary homepage-btn disabled" asp-area="" asp-controller="UserServices" asp-action="Index">Pick'Em</a>
+        <a class="btn btn-lg btn-success homepage-btn disabled" asp-area="" asp-controller="UserServices" asp-action="EditLogin">Manage Picks</a>
         <a class="btn btn-lg btn-danger homepage-btn" asp-area="" asp-controller="Leaderboard" asp-action="Index">Leaderboard</a>
         <a class="btn btn-lg btn-warning homepage-btn" asp-area="" asp-controller="Archive" asp-action="Index">Archive</a>
     </div>

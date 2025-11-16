@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="~/Logo_Roland-Garros.svg" type="image/icon type">
+    <link rel="icon" href="~/US_Open_Logo.png" type="image/icon type">
     <title>@ViewData["Title"] - STC Picks</title>
 
     <!-- Bootstrap & site CSS -->
@@ -19,7 +19,7 @@
         }
 
         nav {
-            background-color: #2E5537 !important; /* RG green */
+            background-color: #3C638E !important; /* RG green */
         }
 
         .navbar-brand, .nav-link {
@@ -28,7 +28,7 @@
         }
 
             .nav-link:hover {
-                color: #D1662F !important; /* clay orange */
+                color: #B22234 !important; /* clay orange */
                 text-decoration: underline;
             }
 
@@ -36,8 +36,14 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
+        .nav-link.disabled {
+            color: #6c757d !important; /* Bootstrap’s $gray-600 */
+            pointer-events: none;
+            cursor: default;
+        }
+
         footer {
-            background-color: #2E5537;
+            background-color: #3C638E;
             color: black !important;
             font-size: 0.9rem;
             text-align: center;
@@ -53,17 +59,19 @@
         }
 
         .btn-primary {
-            background-color: #D1662F;
-            border-color: #D1662F;
+            background-color: #B22234;
+            border-color: #B22234;
+            color: #fff; /* ensures text is readable */
         }
 
             .btn-primary:hover {
-                background-color: #bb4e1d;
-                border-color: #bb4e1d;
+                background-color: #8B1A25; /* darker shade of firebrick */
+                border-color: #8B1A25;
             }
 
+
         footer {
-            background-color: #2E5537;
+            background-color: #3C638E;
             color: #f4e8d3;
             font-size: 0.9rem;
             text-align: center;
@@ -76,7 +84,7 @@
             }
 
                 footer a:hover {
-                    color: #D1662F;
+                    color: #B22234;
                 }
     </style>
 </head>
@@ -94,11 +102,11 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="UserServices" asp-action="Index">Pick'Em</a>
+                        <li class="nav-link.disabled">
+                            <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Pick'Em</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="UserServices" asp-action="EditLogin">Manage Picks</a>
+                        <li class="nav-link.disabled">
+                            <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Manage Picks</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Leaderboard" asp-action="Index">Leaderboard</a>
