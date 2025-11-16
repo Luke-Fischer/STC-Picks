@@ -1,3 +1,3 @@
 # STC Picks
 
-Hosted at https://stc-pickem.azurewebsites.net/
+Hosted at https://stcpickems.azurewebsites.net/
